@@ -1,0 +1,43 @@
+.navbar {
+    position: absolute;
+    display: flex;
+    height: auto;
+    margin-top: 2.5rem;
+    width: 100%;
+    justify-content: end;
+    justify-content: space-between;
+}
+
+h3 {
+    font-size: 1.15vw;
+    font-weight: normal;
+    margin: 0;
+}
+
+.nav-logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 10rem;
+    cursor: pointer;
+    background-image: linear-gradient(to right bottom, #415fe5, #0086f8, #00a3f4, #00bce4, #15d0d2);
+}
+
+.nav-logo-container {
+    padding: 1rem;
+    margin-left: 2.5rem;
+}
+
+.nav-side {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.navlist {
+    padding-right: 2rem;
+    opacity: 1;
+}
+
+.navlist li {
+    padding-bottom: .3rem;
+}

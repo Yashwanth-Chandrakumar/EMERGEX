@@ -1,0 +1,39 @@
+.mainpage {
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+.landing {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.land-title {
+    font-size: 8vw;
+    color: black;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    display: flex;
+}
+
+
+.land-title div:last-child {
+    background: rgb(113, 231, 122);
+    background: linear-gradient(333deg, rgba(113, 231, 122, 1) 21%, rgba(2, 106, 252, 1) 100%);
+    -webkit-background-clip: text;
+    /* For Safari */
+    background-clip: text;
+    color: transparent;
+    transform: translateY(140px);
+    transition: transform .5s;
+}
+
+.land-title div {
+    transform: translateY(140px);
+    transition: transform .5s;
+}

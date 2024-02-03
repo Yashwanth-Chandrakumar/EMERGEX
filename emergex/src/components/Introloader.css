@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Anton&family=Bebas+Neue&family=Jost:ital,wght@1,600&family=Lexend:wght@700&family=Nova+Oval&family=Oswald:wght@500&family=PT+Serif:wght@700&family=Titillium+Web&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font1: "Poppins";
+    --fontSizeIntro: 3vw;
+}
+
+@media (max-width: 1000px) {
+    .intro__red div {
+        transform: scaleY(4);
+    }
+}
+
+@media (max-width: 780px) {
+    :root {
+        --fontSizeIntro: 5vw;
+    }
+
+}
+
+body {
+    margin: 0;
+    font-family: var(--font1);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.flex,
+.flex__col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex__col {
+    flex-direction: column;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+main.flex__col {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.intro {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    transform-origin: top;
+}
+
+.intro__red {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: #f21010;
+    font-family: var(--font1);
+    font-size: 30vw;
+    font-weight: 900;
+    line-height: 30vh;
+    overflow: hidden;
+    color: transparent;
+    text-align: center;
+    -webkit-text-stroke: 1px #222;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+
+.intro__red div {
+    transform: scaleX(0.5) scaleY(1.5);
+    letter-spacing: -1vw;
+}
+
+.number-loader {
+    position: fixed;
+    top: 50%;
+    left: 70%;
+    font-size: 10vw;
+}
