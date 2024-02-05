@@ -1,29 +1,22 @@
 import React, { useEffect, useRef } from 'react';
-import './Navbar.css';
 import gsap from 'gsap';
+import './Navbar.css';
 
 export default function Navbar() {
-    const logoContainerRef = useRef(null);
+    
+    const navbarRef = useRef(null);
 
     useEffect(() => {
-        const tl = gsap.timeline();
+        const navbar = navbarRef.current;
 
-        tl.from(".navbar", {
-            y: -50,
-            opacity: 0,
-            duration: 0.8,
-            delay: 1,
-            ease: "power2.out",
-        })
-        .to(".navbar", {
+        gsap.to(navbar, {
             y: 0,
-            opacity: 1,
-            duration: 0.8,
-            delay: 1,
-            ease: "power2.in",
+            opacity:1,
+            delay: 4,
+            duration: 1,
+            ease: "back.out",
         });
-
-        const logoContainer = logoContainerRef.current;
+        const logoContainer = navbar.querySelector('.nav-logo-container');
         const distance = 25; // Adjust this value as needed
 
         function handleMouseMove(event) {
@@ -63,16 +56,17 @@ export default function Navbar() {
         return () => {
             logoContainer.removeEventListener('mousemove', handleMouseMove);
             logoContainer.removeEventListener('mouseleave', handleMouseLeave);
+           
         };
     }, []);
 
     return (
-        <div className='navbar'>
-            <div ref={logoContainerRef} className='nav-logo-container'>
+        <div className='navbar hidden' ref={navbarRef} >
+            <div className='nav-logo-container'>
                 <div className='nav-logo'></div>
             </div>
             <div className='nav-side'>
-                <h3>BUILD | CREATE | DEVELOP</h3>
+                <h3>LEARN | CONNECT | DEVELOP</h3>
                 <ul className='navlist'>
                     <li><h3>About</h3></li>
                     <li><h3>Partners</h3></li>

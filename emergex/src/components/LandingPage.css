@@ -12,13 +12,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .land-title {
-    font-size: 8vw;
+    font-size: 10rem;
     color: black;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     display: flex;
+    margin-bottom: 0;
 }
 
 
@@ -36,4 +38,15 @@
 .land-title div {
     transform: translateY(140px);
     transition: transform .5s;
+}
+
+.landing-description {
+    color: rgb(130, 130, 130);
+    width: 45%;
+    text-align: center;
+    font-size: 1.3rem;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s opacity 1s;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }

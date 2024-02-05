@@ -5,19 +5,37 @@ import gsap from 'gsap';
 export default function Introloader() {
     useEffect(() => {
         var fontTL = gsap.timeline(); // Timeline for font loading animation
-        fontTL.to(".intro", 0.1, { fontFamily: "Anton" })
-            .to(".intro", 0.1, { fontFamily: "Jost" })
-            .to(".intro", 0.1, { fontFamily: "Alkatra" })
-            .to(".intro", 0.1, { fontFamily: "Nova Oval" })
-            .to(".intro", 0.1, { fontFamily: "Oswald" })
-            .to(".intro", 0.1, { fontFamily: "PT Serif" })
-            .to(".intro", 0.1, { fontFamily: "Lexend" })
-            .to(".intro", 0.1, { fontFamily: "Poppins" })
-            .to(".intro", 0.1, { fontFamily: "Titillium Web" });
+        fontTL.to(".intro-loader", 0.1, { fontFamily: "Anton", innerHTML:"Learn" })
+            .to(".intro-loader", 0.1, { fontFamily: "Jost", innerHTML:"Learn" })
+            .to(".intro-loader", 0.1, { fontFamily: "Alkatra", innerHTML:"Learn" })
+            .to(".intro-loader", 0.1, { fontFamily: "Nova Oval", innerHTML:"Learn" })
+            .to(".intro-loader", 0.1, { fontFamily: "Oswald", innerHTML:"Learn"})
+            .to(".intro-loader", 0.1, { fontFamily: "PT Serif", innerHTML:"Learn" })
+            .to(".intro-loader", 0.1, { fontFamily: "Lexend", innerHTML:"Learn" })
+            .to(".intro-loader", 0.1, { fontFamily: "Poppins", innerHTML:"Learn" })
+            .to(".intro-loader", 0.1, { fontFamily: "Titillium Web", innerHTML: "Learn" })
+            .to(".intro-loader", 0.1, { fontFamily: "Anton", innerHTML:"Connect" })
+            .to(".intro-loader", 0.1, { fontFamily: "Jost", innerHTML:"Connect" })
+            .to(".intro-loader", 0.1, { fontFamily: "Alkatra", innerHTML:"Connect" })
+            .to(".intro-loader", 0.1, { fontFamily: "Nova Oval", innerHTML:"Connect" })
+            .to(".intro-loader", 0.1, { fontFamily: "Oswald", innerHTML:"Connect"})
+            .to(".intro-loader", 0.1, { fontFamily: "PT Serif", innerHTML:"Connect" })
+            .to(".intro-loader", 0.1, { fontFamily: "Lexend", innerHTML:"Connect" })
+            .to(".intro-loader", 0.1, { fontFamily: "Poppins", innerHTML:"Connect" })
+            .to(".intro-loader", 0.1, { fontFamily: "Titillium Web", innerHTML: "Connect" })
+            .to(".intro-loader", 0.1, { fontFamily: "Anton", innerHTML:"Grow" })
+            .to(".intro-loader", 0.1, { fontFamily: "Jost", innerHTML:"Grow" })
+            .to(".intro-loader", 0.1, { fontFamily: "Alkatra", innerHTML:"Grow" })
+            .to(".intro-loader", 0.1, { fontFamily: "Nova Oval", innerHTML:"Grow" })
+            .to(".intro-loader", 0.1, { fontFamily: "Oswald", innerHTML:"Grow"})
+            .to(".intro-loader", 0.1, { fontFamily: "PT Serif", innerHTML:"Grow" })
+            .to(".intro-loader", 0.1, { fontFamily: "Lexend", innerHTML:"Grow" })
+            .to(".intro-loader", 0.1, { fontFamily: "Poppins", innerHTML:"Grow" })
+            .to(".intro-loader", 0.1, { fontFamily: "Titillium Web", innerHTML:"Grow" })
 
         var loaderTL = gsap.timeline();
         loaderTL.to(".number-loader", {
-                duration: 1, 
+                duration: 2.7, 
                 innerHTML: "100",
                 roundProps: "innerHTML",
                 ease: "none",
@@ -31,7 +49,7 @@ export default function Introloader() {
         <div>
             <main className="flex__col">
                 <section className="intro flex">
-                    <h1>Loading<br/></h1>
+                    <h1 className='intro-loader'>Loading<br/></h1>
                     <h1 className="number-loader">0</h1>
                     <div className="intro__red flex"><div>BUILD | CREATE | DEVELOP</div></div>
                 </section>

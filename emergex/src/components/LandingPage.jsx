@@ -10,16 +10,39 @@ export default function LandingPage() {
         const titleElement = titleRef.current;
 
         gsap.to(titleElement.children, {
-            y: 0,
+            y: -50,
             stagger: 0.05,
-            delay: 1.3,
+            delay: 2.8,
             duration: 0.5,
             ease: "back.out",
         });
+        gsap.to(".landing-description", {
+            y: 0,
+            opacity:1,
+            delay: 4,
+            duration: 1,
+            ease: "back.out",
+        });
+
+        gsap.fromTo(".landing", {
+            opacity: 1,
+            y:0,
+
+        },
+        {
+            y: 150,
+            opacity: 0,
+            scrollTrigger: {
+                trigger: ".landing",
+                start: "bottom bottom",
+                end: "bottom top",
+                scrub: true,
+              }
+        })
     }, []);
 
     return (
-        <div className='mainpage'>
+        <div className='mainpage' >
         <Navbar/>
         <div className='landing'>
             
@@ -27,7 +50,8 @@ export default function LandingPage() {
                 {Array.from("EmergeX").map((letter, index) => (
                     <div key={index} className="letter">{letter}</div>
                 ))}
-            </h1>
+                </h1>
+                <h3 className='landing-description'>A Web3 community connecting students, companies, job seekers and all through events, hackathons  and meetups.</h3>
             </div>
             </div>
     );

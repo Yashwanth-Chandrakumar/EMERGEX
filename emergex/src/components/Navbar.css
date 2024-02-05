@@ -2,10 +2,14 @@
     position: absolute;
     display: flex;
     height: auto;
-    margin-top: 2.5rem;
+    padding-top: 2.5rem;
     width: 100%;
     justify-content: end;
     justify-content: space-between;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: transform 1s opacity 1s;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 h3 {
@@ -31,6 +35,10 @@ h3 {
     display: flex;
     width: 30%;
     justify-content: space-between;
+}
+
+.nav-side>h3 {
+    color: rgb(130, 130, 130);
 }
 
 .navlist {
