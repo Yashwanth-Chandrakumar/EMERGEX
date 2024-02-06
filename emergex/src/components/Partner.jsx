@@ -5,7 +5,7 @@ import { SplitText } from 'gsap-trial/SplitText'
 import { ScrollTrigger } from 'gsap-trial/ScrollTrigger'
 
 import './Partner.css'
-import push from '../assets/img/push.webp'
+import push from '../assets/img/push.png'
 import shardeum from '../assets/img/shardeum.png'
 import buildbear from '../assets/img/buildbear.svg'
 
@@ -23,12 +23,11 @@ const Partner = () => {
             stagger: 0.05,
             delay: 0.1,
             opacity: 0,
-            duration: 1,
+            duration: 0.8,
             ease: "back.out",
             scrollTrigger: {
                 trigger: partnerTitle,
                 start: "top 80%",
-                markers: true,
             }
         });
 
@@ -44,9 +43,18 @@ const Partner = () => {
                 </h1>
             </div>
             <div className='partner-content col-md-7 d-flex my-auto'>
-                <img src={push} alt='push-protocol' />
-                <img src={shardeum} alt='shardeum' />
-                <img src={buildbear} alt="build bear" />
+                <span>
+                    <img src={push} alt='push-protocol' />
+                    <p className='partner-text mt-5'>Push Protocol</p>
+                </span>
+                <span>
+                    <img src={shardeum} alt='shardeum' />
+                    <p className='partner-text mt-5'>Shardeum</p>
+                </span>
+                <span>
+                    <img src={buildbear} alt="build bear" />
+                    <p className='partner-text mt-5'>Build Bear</p>
+                </span>
             </div>
         </div>
     )

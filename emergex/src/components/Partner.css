@@ -13,8 +13,17 @@
 }
 
 .partner-content img {
-    width: 120px;
-    height: 80px;
-    margin: 0px 40px;
+    width: auto;
+    height: 100px;
+    margin: 0px 50px;
     padding: 0px 0px;
+}
+
+.partner-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
 }
