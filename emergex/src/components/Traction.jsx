@@ -31,7 +31,7 @@ export default function Traction() {
     return (
       <div className="App" ref={component}>
         
-        <div ref={slider} className="container">
+        <div ref={slider} className="traction-container">
           <div className="description panel blue">
             Universities
           </div>
