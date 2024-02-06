@@ -2,6 +2,7 @@
     background-color: var(--text-color);
     color: var(--bg-color);
     height: 100vh;
+    align-items: flex-start; 
 }
 
 .partner-title h1 {
@@ -11,3 +12,9 @@
     font-weight: 600;
 }
 
+.partner-content img {
+    width: 120px;
+    height: 80px;
+    margin: 0px 40px;
+    padding: 0px 0px;
+}
