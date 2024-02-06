@@ -1,0 +1,20 @@
+.container {
+    width: 600vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.lastContainer {
+    display: flex;
+    height: 100vh;
+    background: yellow;
+}
+
+.panel {
+    width: 100vw;
+    height: 100vh;
+    color: var(--bg-color);
+    background-color: var(--text-color);
+}

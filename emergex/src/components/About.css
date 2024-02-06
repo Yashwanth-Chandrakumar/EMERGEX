@@ -1,10 +1,11 @@
 .about {
     height: 100vh;
     width: 100%;
-    background-color: black;
+    background-color: var(--text-color);
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    padding-top: 4rem;
+    padding-top: 2rem;
+    display: flex;
 }
 
 .about-title {
@@ -17,7 +18,21 @@
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
+.about-title-container {
+    width: 40%;
+}
+
 .about-title div {
     transform: translateY(140px);
     transition: transform .5s;
+}
+
+.about-description {
+    font-size: 1.5rem;
+    align-self: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 2.5rem;
+    width: 55%;
+    color: rgb(206, 203, 203);
+    text-align: justify;
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import './Navbar.css';
+import DarkModeToggle from './DarkMode';
 
 export default function Navbar() {
     
@@ -30,12 +31,13 @@ export default function Navbar() {
 
             const distanceX = mouseX - centerX;
             const distanceY = mouseY - centerY;
-
+            console.log(distanceX,distanceY)
             if (Math.abs(distanceX) <= distance && Math.abs(distanceY) <= distance) {
+                console.log("logo moving")
                 gsap.to(logoContainer, {
                     x: distanceX,
                     y: distanceY,
-                    duration: 0.2,
+                    duration: 0.5,
                     ease: "power2.out",
                 });
             }
@@ -67,11 +69,12 @@ export default function Navbar() {
             </div>
             <div className='nav-side'>
                 <h3>LEARN | CONNECT | DEVELOP</h3>
+                <DarkModeToggle/>
                 <ul className='navlist'>
                     <li><h3>About</h3></li>
+                    <li><h3>Events</h3></li>
                     <li><h3>Partners</h3></li>
-                    <li><h3>Ecosystem</h3></li>
-                    <li><h3>Programs</h3></li>
+                    <li><h3>Gallery</h3></li>
                     <li><h3>Contact</h3></li>
                 </ul>
             </div>

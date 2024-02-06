@@ -2,8 +2,8 @@
     height: 100vh;
     margin: 0;
     width: 100%;
-    background-color: white;
-    color: black;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .landing {
@@ -17,7 +17,7 @@
 
 .land-title {
     font-size: 10rem;
-    color: black;
+    color: var(--text-color);
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     display: flex;
     margin-bottom: 0;

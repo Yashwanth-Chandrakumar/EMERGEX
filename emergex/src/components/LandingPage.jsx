@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import gsap from "gsap";
 import './LandingPage.css';
 import Navbar from './Navbar';
+import DarkModeToggle from './DarkMode';
 
 export default function LandingPage() {
     const titleRef = useRef(null);
@@ -24,7 +25,22 @@ export default function LandingPage() {
             ease: "back.out",
         });
 
-        gsap.fromTo(".landing", {
+        gsap.fromTo(".land-title", {
+            opacity: 1,
+            y:0,
+
+        },
+        {
+            y: 150,
+            opacity: 0,
+            scrollTrigger: {
+                trigger: ".landing",
+                start: "bottom bottom",
+                end: "bottom top",
+                scrub: true,
+              }
+        })
+        gsap.fromTo(".landing-description", {
             opacity: 1,
             y:0,
 

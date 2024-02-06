@@ -13,6 +13,7 @@
 }
 
 h3 {
+
     font-size: 1.15vw;
     font-weight: normal;
     margin: 0;
@@ -22,14 +23,20 @@ h3 {
     height: 70px;
     width: 70px;
     border-radius: 10rem;
-    cursor: pointer;
     background-image: linear-gradient(to right bottom, #415fe5, #0086f8, #00a3f4, #00bce4, #15d0d2);
 }
 
 .nav-logo-container {
-    padding: 1rem;
-    margin-left: 2.5rem;
+    padding: 3rem;
+    margin-top: -1.5rem;
+    margin-left: 1.5rem;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .nav-side {
     display: flex;
