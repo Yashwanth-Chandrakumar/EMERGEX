@@ -63,7 +63,7 @@ export default function Navbar() {
     }, []);
 
     return (
-        <div className='navbar hidden' ref={navbarRef} >
+        <div className='navbar1' ref={navbarRef} >
             <div className='nav-logo-container'>
                 <div className='nav-logo'></div>
             </div>

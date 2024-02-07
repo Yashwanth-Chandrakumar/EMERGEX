@@ -1,0 +1,29 @@
+.partner-container {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    height: 100vh;
+    align-items: flex-start; 
+}
+
+.partner-title h1 {
+    font-size: 69px;
+    width: 75%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.partner-content img {
+    width: auto;
+    height: 100px;
+    margin: 0px 50px;
+    padding: 0px 0px;
+}
+
+.partner-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
