@@ -5,6 +5,7 @@ import LandingPage from './components/LandingPage'
 import About from './components/About'
 import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
 import Traction from './components/Traction'
+import Services from './components/Services'
 function App() {
   
   return (
@@ -13,7 +14,8 @@ function App() {
         <Introloader />
         <LandingPage />
         <About />
-        <Traction/>
+        <Traction />
+        <Services/>
       </div>
       </ReactLenis>
   )

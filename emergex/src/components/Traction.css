@@ -1,5 +1,5 @@
 .container {
-    width: 600vw;
+    width: 300vw;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -9,7 +9,8 @@
 .lastContainer {
     display: flex;
     height: 100vh;
-    background: yellow;
+    background-color: black;
+    margin: 0;
 }
 
 .panel {
@@ -17,4 +18,54 @@
     height: 100vh;
     color: var(--bg-color);
     background-color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sub-panel {
+    height: 60%;
+    width: 30%;
+    border-radius: 30px;
+    background-color: #2A2A39;
+    padding: 4rem;
+    color: #9DA7C4;
+    cursor: pointer;
+}
+
+.sub-panel h3 {
+    font-size: 1.4rem;
+}
+
+.sub-panel span {
+    color: var(--bg-color);
+}
+
+.arrow {
+    margin-bottom: -0.4rem;
+}
+
+.cursor,
+.hand {
+    position: fixed;
+    left: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform .1s;
+}
+
+.cursor {
+    z-index: 999;
+}
+
+.hand {
+    background: rgb(155, 0, 255);
+    top: 50%;
+    width: 80px;
+    height: 80px;
+    z-index: 9999;
+    display: grid;
+    place-content: center;
+    transform: rotate(45deg);
+    opacity: 0;
 }

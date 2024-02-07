@@ -46,7 +46,7 @@
     text-align: center;
     font-size: 1.3rem;
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(140px);
     transition: transform 1s opacity 1s;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }

@@ -19,10 +19,13 @@ export default function LandingPage() {
         });
         gsap.to(".landing-description", {
             y: 0,
-            opacity:1,
+            opacity: 1,
             delay: 4,
             duration: 1,
             ease: "back.out",
+            onComplete: () => {
+                console.log("Description animation completed");
+            }
         });
 
         gsap.fromTo(".land-title", {
@@ -40,21 +43,21 @@ export default function LandingPage() {
                 scrub: true,
               }
         })
-        gsap.fromTo(".landing-description", {
-            opacity: 1,
-            y:0,
+        // gsap.fromTo(".landing-description", {
+        //     opacity: 1,
+        //     y:0,
 
-        },
-        {
-            y: 150,
-            opacity: 0,
-            scrollTrigger: {
-                trigger: ".landing",
-                start: "bottom bottom",
-                end: "bottom top",
-                scrub: true,
-              }
-        })
+        // },
+        // {
+        //     y: 150,
+        //     opacity: 0,
+        //     scrollTrigger: {
+        //         trigger: ".landing",
+        //         start: "bottom bottom",
+        //         end: "bottom top",
+        //         scrub: true,
+        //       }
+        // })
     }, []);
 
     return (
@@ -67,6 +70,7 @@ export default function LandingPage() {
                     <div key={index} className="letter">{letter}</div>
                 ))}
                 </h1>
+                
                 <h3 className='landing-description'>A Web3 community connecting students, companies, job seekers and all through events, hackathons  and meetups.</h3>
             </div>
             </div>
