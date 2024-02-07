@@ -1,4 +1,4 @@
-.navbar1 {
+.navbar {
     position: absolute;
     display: flex;
     height: auto;
@@ -35,10 +35,6 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.nav-logo {
-    flex-shrink: 0;
 }
 
 .nav-side {
