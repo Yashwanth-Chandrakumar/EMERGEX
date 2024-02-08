@@ -45,7 +45,7 @@ const Partner = () => {
             <div className='partner-title col-md-5 d-flex align-item-center my-auto' ref={partnerTitleRef}>
                 <h1 className='mx-auto d-flex flex-column' ref={partnerRef}>
                     {"Trusted By Partners".split(" ").map((word, wordIndex) => (
-                        <div>
+                        <div key={wordIndex} className='word'>
                             {word.split("").map((char, charIndex) => (
                                 <span key={charIndex} className='partner-title-char'>{char}</span>
                             ))}
