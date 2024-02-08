@@ -21,7 +21,7 @@
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     display: flex;
     margin-bottom: 0;
-    font-weight: bold   ;
+    font-weight: bold;
 }
 
 
@@ -29,7 +29,6 @@
     background: rgb(113, 231, 122);
     background: linear-gradient(333deg, rgba(113, 231, 122, 1) 21%, rgba(2, 106, 252, 1) 100%);
     -webkit-background-clip: text;
-    /* For Safari */
     background-clip: text;
     color: transparent;
     transform: translateY(140px);
@@ -50,4 +49,32 @@
     transform: translateY(140px);
     transition: transform 1s opacity 1s;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@media screen and (max-width:800px) {
+    .mainpage {
+        height: 40vh;
+    }
+
+    .landing {
+        align-items: start;
+        margin-left: 2rem;
+    }
+
+    .land-title {
+        font-size: 3.5rem;
+        clip-path: none;
+    }
+
+    .land-title div {
+        transform: translateY(100px);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .landing-description {
+        font-size: 1rem;
+        width: 80%;
+        text-align: left;
+        margin-top: -2rem;
+    }
 }

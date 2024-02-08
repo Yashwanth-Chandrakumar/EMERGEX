@@ -55,3 +55,41 @@ h3 {
 .navlist li {
     padding-bottom: .3rem;
 }
+
+@media screen and (max-width:800px) {
+    .navbar {
+        padding-top: 1rem;
+    }
+
+    .nav-logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    .nav-logo-container {
+        padding: 1rem;
+        margin-top: 0;
+    }
+
+    .nav-side {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .toggle {
+        margin-top: 2.5rem;
+    }
+
+    .navlist {
+        padding-right: 2.5rem;
+    }
+
+    .nav-side>h3 {
+        display: none;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+}

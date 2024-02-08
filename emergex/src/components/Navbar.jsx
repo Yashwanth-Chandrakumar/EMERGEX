@@ -69,7 +69,8 @@ export default function Navbar() {
             </div>
             <div className='nav-side'>
                 <h3>LEARN | CONNECT | DEVELOP</h3>
-                <DarkModeToggle/>
+                <div className='toggle'>
+                <DarkModeToggle /></div>
                 <ul className='navlist'>
                     <li><h3>About</h3></li>
                     <li><h3>Events</h3></li>

@@ -1,5 +1,5 @@
 .services {
-    height: 90vh;
+    height: 140vh;
     width: 100%;
     background-color: black;
     margin: 0;
@@ -8,10 +8,9 @@
 }
 
 .services h1 {
+    padding-left: 5rem;
     margin: 0;
     font-size: 6.5rem;
-    padding-left: 5rem;
-    padding-top: 3rem;
 }
 
 .services h4 {
@@ -21,4 +20,62 @@
     font-size: 1.8rem;
     color: #9DA7C4;
     margin-top: 0;
+}
+
+.services-content {
+    margin-left: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plate {
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 40rem;
+    background: rgb(111, 228, 125);
+    background: linear-gradient(333deg, rgba(111, 228, 125, 1) 15%, rgba(82, 112, 255, 1) 100%);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.service:nth-child(1) {
+    transform: translateX(-500px);
+    opacity: 0;
+    transition: transform 1s opacity 1s;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.service:nth-child(2) {
+    transform: translateX(500px);
+    opacity: 0;
+    transition: transform 1s opacity 1s;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.service:nth-child(3) {
+    transform: translateX(-500px);
+    opacity: 0;
+    transition: transform 1s opacity 1s;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.service:nth-child(4) {
+    transform: translateX(500px);
+    opacity: 0;
+    transition: transform 1s opacity 1s;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.service:nth-child(5) {
+    transform: translateX(-500px);
+    opacity: 0;
+    transition: transform 1s opacity 1s;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }

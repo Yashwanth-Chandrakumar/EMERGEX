@@ -36,3 +36,29 @@
     color: rgb(206, 203, 203);
     text-align: justify;
 }
+
+@media screen and (max-width:800px) {
+    .about {
+        flex-direction: column;
+        gap: 40vh;
+        height: 80vh;
+    }
+
+    .about-title {
+        font-size: 4rem;
+        clip-path: none;
+    }
+
+    .about-title div {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .about-description {
+        width: 90%;
+        padding: 1rem;
+        font-size: 1.1rem;
+        text-align: justify;
+        text-indent: 3rem;
+    }
+
+}

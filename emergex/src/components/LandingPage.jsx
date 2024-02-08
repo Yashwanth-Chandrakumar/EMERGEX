@@ -2,7 +2,6 @@ import React, { useRef, useEffect } from 'react';
 import gsap from "gsap";
 import './LandingPage.css';
 import Navbar from './Navbar';
-import DarkModeToggle from './DarkMode';
 
 export default function LandingPage() {
     const titleRef = useRef(null);
