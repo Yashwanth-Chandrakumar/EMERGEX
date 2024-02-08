@@ -7,9 +7,13 @@ const Ecosystem = () => {
   const ecoRef = useRef(null);
   const ecocontent = ecoRef.current;
   
-  const rotate = (index, totalItems) => {
-      const angle = isOpen ? (360 / totalItems) * index : 0;
-      return { transform: `rotate(${angle}deg)` };
+  const rotate = (index, totalItems, padding=60) => {
+      const temp = isOpen ? (-360 * 2 / totalItems) * index : 0;
+      const angle = temp + padding * index;
+      return { 
+                transform: `rotate(${angle}deg)`,
+                span: { transform: `rotate(${-angle}deg)` }, 
+            };
     };
     
     const toggleOptions = () => {
@@ -40,20 +44,31 @@ const Ecosystem = () => {
 
   return (
     <div className='ecosystem'>
-        <h1 className='eco-title col-md-12'>
+        <h1 className='eco-title col-md-12 m-0 ps-5 py-5'>
             EmergeX Ecosystem
             </h1>
-        <div className='eco-content' ref={ecoRef}>
-            <ul className={`circle-group ${isOpen ? 'open' : ''}`}>
-            {[1, 2, 3, 4, 5, 6].map((item, index) => (
-                <li key={index} style={rotate(index, 6)} className='circle-card'>
-                    <span className='circle'>circle</span>
-                </li>))}
+        <div className='eco-content open' ref={ecoRef}>
+            <ul className={`circle-group ${isOpen ? 'open' : 'open'}`}>
+                {[1, 2, 3, 4, 5, 6].map((item, index) => (
+                    <li key={index} style={rotate(index, 6)} className='circle-card'>
+                        <span 
+                            className='circle'
+                            style={rotate(index, 6).span}
+                        >
+                            circle
+                            </span>
+                        </li>
+                    ))}
             </ul>
-            <button className='eco-btn' onClick={toggleOptions}>
+            <h3 className='eco-label'>
                 EmergeX
-                </button>
+                </h3>
             </div>
+            
+        {/* for testing */}
+        <button className='eco-btn' onClick={toggleOptions}>
+            EmergeX
+            </button>
         </div>
   )
 }

@@ -2,45 +2,35 @@
     /* background-color: var(--text-color); */
     background-color: red;
     color: var(--bg-color);
-    height: 90vh;
+    height: 100vh;
     position: relative;
 }
 
 .circle-group {
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80vh; */
     position: absolute;
 	left: 50%;
 	top: 50%;
 	width: 140px;
 	height: 140px;
-	margin-top: -70px;
+	/* margin-top: -70px; */
 	margin-left: -70px;
-    /*  */
-    /* padding: 0;
-	margin: 0;
-	top: -20px;
-	right: -20px;
-	bottom: -20px;
-	left: -20px; */
 }
 
 .ecosystem li {
     position: absolute;
 	width: 0;
 	height: 100%;
-	margin: 0 50%;
+	margin: -20% 50%;
 	-webkit-transform: rotate(-360deg);
 	transition: all 0.8s ease-in-out;
 }
 
 
-.eco-content li span {
+.eco-content li .circle {
     position: absolute;
     left: 50%;
-    bottom: 100%;
+    /* top: 120%; */
+    bottom: -10%;
     width: 0px;
     height: 0px;
     line-height: 1px;
@@ -48,33 +38,41 @@
     background-image: linear-gradient(to right bottom, #415fe5, #0086f8, #00a3f4, #00bce4, #15d0d2);
     border-radius: 50%;
     text-align: center;
-    font-size: 24px;
+    font-size: 0px;
     overflow: hidden;
     cursor: pointer;
     box-shadow: none;
     transition: all 0.8s ease-in-out;
 }
 
-.eco-content.open li span{
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    margin-left: -40px;
+.eco-content.open li .circle{
+    width: 150px;
+    height: 150px;
+    bottom: 120%;
+    /* top: 150%; */
+    line-height: 150px;
+    margin-left: 10px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
     font-size: 24px;
 }
 
 .eco-btn {
     position: relative;
-    width: 20%;
-    height: 20%;
+    width: 150px;
+    height: 50px;
     padding: 10px;
     background: #428bca;
-    border-radius: 50%;
     border: 0;
     color: white;
     font-size: 20px;
     cursor: pointer;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-    transition: all 0.1s;
+    left: 80%;
+}
+
+.eco-label {
+    position: absolute;
+	left: 43%;
+	top: 52%;
+    font-size: 44px;
+    z-index: 1;
 }
