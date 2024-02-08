@@ -80,7 +80,7 @@ export default function Traction() {
   return (
     <div className="App" ref={component}>
 
-      <div ref={slider} className="container">
+      <div ref={slider} className="traction-container">
         <div className="cursor"></div>
         <div className="hand">
           View
