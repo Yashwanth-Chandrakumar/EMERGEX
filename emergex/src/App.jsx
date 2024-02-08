@@ -6,6 +6,7 @@ import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
 import Traction from './components/Traction'
 import Services from './components/Services'
 import Partner from './components/Partner'
+import Ecosystem from './components/Ecosystem'
 function App() {
   
   return (
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Traction />
         <Services />
+        <Ecosystem />
         <Partner />
       </div>
       </ReactLenis>
