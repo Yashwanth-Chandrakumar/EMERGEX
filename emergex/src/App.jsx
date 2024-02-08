@@ -11,12 +11,13 @@ function App() {
   
   return (
     <ReactLenis root>
-    <div  >
+    <div>
         <Introloader />
         <LandingPage />
         <About />
         <Traction />
-                          <Services />
+        <Services />
+        <Partner />
       </div>
       </ReactLenis>
   )
