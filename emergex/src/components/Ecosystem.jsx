@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react';
 
-import './Ecosystem.css'
+import './Ecosystem.css';
 
 const Ecosystem = () => {
   const [isOpen, setIsOpen] = useState(false);
   const ecoRef = useRef(null);
-  const label = ["Blockchain/Web3 Companies", "Investors & VCs", "Government", "Non Profit Orgs.", "Talent Recruiters", "Educational Institutions"]
+  const label = ["Blockchain/ Web3 Companies", "Investors & VCs", "Government", "Non Profit Orgs.", "Talent Recruiters", "Educational Institutions"]
   const ecocontent = ecoRef.current;
   
   const rotate = (index, totalItems, padding=60) => {
@@ -17,8 +17,8 @@ const Ecosystem = () => {
             };
     };
     
-    const toggleOptions = () => {
-        setIsOpen((prevIsOpen) => !prevIsOpen);
+  const toggleOptions = () => {
+      setIsOpen((prevIsOpen) => !prevIsOpen);
   };
 
   useEffect(() => {
@@ -47,8 +47,8 @@ const Ecosystem = () => {
         <h1 className='eco-title col-md-12 m-0 ps-5 py-5'>
             EmergeX Ecosystem
             </h1>
-        <div className='eco-content open' ref={ecoRef}>
-            <ul className={`circle-group ${isOpen ? 'open' : 'open'}`}>
+        <div className='eco-content open col-md-12 d-flex' ref={ecoRef}>
+            <ul className="circle-group">
                 {[1, 2, 3, 4, 5, 6].map((item, index) => (
                     <li key={index} style={rotate(index, 6)} className='circle-card'>
                         <span 
@@ -62,7 +62,7 @@ const Ecosystem = () => {
             </ul>
             <h3 className='eco-label'>
                 EmergeX
-                </h3>
+                </h3> 
             </div>
             
         {/* for testing */}
