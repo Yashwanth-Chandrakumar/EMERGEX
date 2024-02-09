@@ -5,8 +5,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './Ecosystem.css';
 
 const Ecosystem = () => {
-  gsap.registerPlugin(ScrollTrigger);
-
   const [isOpen, setIsOpen] = useState(false);
   const ecoRef = useRef(null);
   const label = ["Blockchain/ Web3 Companies", "Investors & VCs", "Government", "Non Profit Orgs.", "Talent Recruiters", "Educational Institutions"]
@@ -36,14 +34,38 @@ const Ecosystem = () => {
     }
   }, [isOpen]);
 
-
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+  
+    if (ecocontent) {
+      ScrollTrigger.create({
+        trigger: ecocontent,
+        start: 'top 70%',
+        end: 'bottom 30%',
+        onEnter: () => {
+          toggleOptions();
+        },
+        onLeave: () => {
+          toggleOptions();
+        },
+        onEnterBack: () => {
+            toggleOptions();
+        },
+        onLeaveBack: () => {
+            toggleOptions();
+        },
+        markers: true,
+        scrub: true,
+      });
+    }
+  }, [ecocontent]);
   
   return (
     <div className='ecosystem'>
         <h1 className='eco-title col-md-12 m-0 ps-5 py-5'>
             EmergeX Ecosystem
             </h1>
-        <div className='eco-content open col-md-12 d-flex' ref={ecoRef}>
+        <div className='eco-content col-md-12 d-flex' ref={ecoRef}>
             <ul className="circle-group">
                 {[1, 2, 3, 4, 5, 6].map((item, index) => (
                     <li key={index} style={rotate(index, 6)} className='circle-card'>
