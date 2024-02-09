@@ -1,13 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import './Ecosystem.css';
 
 const Ecosystem = () => {
+  gsap.registerPlugin(ScrollTrigger);
+
   const [isOpen, setIsOpen] = useState(false);
   const ecoRef = useRef(null);
   const label = ["Blockchain/ Web3 Companies", "Investors & VCs", "Government", "Non Profit Orgs.", "Talent Recruiters", "Educational Institutions"]
   const ecocontent = ecoRef.current;
-  
+
   const rotate = (index, totalItems, padding=60) => {
       const temp = isOpen ? (-360 * 2 / totalItems) * index : 0;
       const angle = temp + padding * index;
@@ -22,16 +26,6 @@ const Ecosystem = () => {
   };
 
   useEffect(() => {
-    
-    const timerId = setTimeout(() => {
-      toggleOptions();
-    }, 100);
-
-    return () => clearTimeout(timerId); 
-
-  }, []);
-
-  useEffect(() => {
     if (ecoRef.current) {
       if (isOpen) {
         // console.log('open');
@@ -42,6 +36,8 @@ const Ecosystem = () => {
     }
   }, [isOpen]);
 
+
+  
   return (
     <div className='ecosystem'>
         <h1 className='eco-title col-md-12 m-0 ps-5 py-5'>
