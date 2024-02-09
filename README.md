@@ -14,4 +14,3 @@ to-do : <br>
 =
  => Update traction content <br>
  => partner link, dark color logos <br>
- => responsive want to done
