@@ -1,5 +1,6 @@
 .services {
-    height: 140vh;
+    /* 140vh -> 150 vh modified for layout collide */
+    height: 150vh; 
     width: 100%;
     background-color: black;
     margin: 0;
