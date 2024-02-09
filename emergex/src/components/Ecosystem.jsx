@@ -1,10 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import './Ecosystem.css';
 
 const Ecosystem = () => {
+  gsap.registerPlugin(ScrollTrigger);
   const [isOpen, setIsOpen] = useState(false);
   const ecoRef = useRef(null);
   const label = ["Blockchain/ Web3 Companies", "Investors & VCs", "Government", "Non Profit Orgs.", "Talent Recruiters", "Educational Institutions"]
@@ -26,7 +27,6 @@ const Ecosystem = () => {
   useEffect(() => {
     if (ecoRef.current) {
       if (isOpen) {
-        // console.log('open');
         ecoRef.current.classList.add('open');
     } else {
         ecoRef.current.classList.remove('open');
@@ -37,9 +37,11 @@ const Ecosystem = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
   
-    if (ecocontent) {
+    if (ecoRef.current) {
+      const triggerElement = ecoRef.current;
+
       ScrollTrigger.create({
-        trigger: ecocontent,
+        trigger: triggerElement,
         start: 'top 70%',
         end: 'bottom 30%',
         onEnter: () => {
@@ -49,16 +51,34 @@ const Ecosystem = () => {
           toggleOptions();
         },
         onEnterBack: () => {
-            toggleOptions();
+          toggleOptions();
         },
         onLeaveBack: () => {
-            toggleOptions();
+          toggleOptions();
         },
-        markers: true,
         scrub: true,
       });
     }
-  }, [ecocontent]);
+
+    gsap.fromTo(
+      '.eco-label', 
+      {
+        scale: 0,
+      },
+      {
+        scale: 1,
+        scrollTrigger: {
+          trigger: ecoRef.current,
+          start: "top 70%",
+          end: "bottom 45%",
+          toggleActions: "restart pause resume pause",
+        },
+        duration: 1,
+        ease: "back.out(1.7)",
+      }
+    );
+
+  }, []);
   
   return (
     <div className='ecosystem'>
@@ -79,14 +99,14 @@ const Ecosystem = () => {
                     ))}
             </ul>
             <h3 className='eco-label'>
-                EmergeX
+                Emerge<span className='gradient-text'>X</span>
                 </h3> 
             </div>
             
         {/* for testing */}
-        <button className='eco-btn' onClick={toggleOptions}>
+        {/* <button className='eco-btn' onClick={toggleOptions}>
             EmergeX
-            </button>
+            </button> */}
         </div>
   )
 }

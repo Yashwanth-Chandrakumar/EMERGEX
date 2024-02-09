@@ -1,6 +1,5 @@
 .ecosystem {
-    /* background-color: var(--text-color); */
-    background-color: red;
+    background-color: var(--text-color);
     color: var(--bg-color);
     height: 100vh;
     position: relative;
@@ -19,12 +18,6 @@
 
 .circle-group {
     position: absolute;
-	/* left: 50%;
-	top: 50%; 
-	width: 140px;
-	height: 140px;
-	margin-top: -70px;
-	margin-left: -70px; */
 }
 
 .ecosystem li {
@@ -81,4 +74,12 @@
 .eco-label {
     font-size: 44px;
     z-index: 1;
+}
+
+.gradient-text {
+    background: linear-gradient(333deg, rgba(113, 231, 122, 1) 21%, rgba(2, 106, 252, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
 }
