@@ -35,11 +35,23 @@
 
 .sub-panel h3 {
     font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.sub-panel h4 {
+    font-size: 16px;
+    margin: 1.33rem 0px;
+    font-weight: bold;
 }
 
 .sub-panel span {
     color: var(--bg-color);
 }
+
+svg {
+    vertical-align: 0;
+}
+
 
 .arrow {
     margin-bottom: -0.4rem;
