@@ -1,5 +1,6 @@
 .partner-container {
-    background-color: var(--text-color);
+    /* background-color: var(--text-color); */
+    background-color: red;
     color: var(--bg-color);
     height: 100vh;
     align-items: flex-start; 

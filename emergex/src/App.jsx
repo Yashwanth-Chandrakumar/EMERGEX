@@ -17,8 +17,11 @@ function App() {
         <About />
         <Traction />
         <Services />
-        <Ecosystem />
-        <Partner />
+        <div>
+          hello
+        </div>
+        {/* <Ecosystem /> */}
+        {/* <Partner /> */}
       </div>
       </ReactLenis>
   )
