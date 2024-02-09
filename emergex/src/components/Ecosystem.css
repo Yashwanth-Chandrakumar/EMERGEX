@@ -6,6 +6,11 @@
     position: relative;
 }
 
+.eco-title {
+    font-size: 50px;
+    font-weight: 600;
+}
+
 .circle-group {
     position: absolute;
 	left: 50%;

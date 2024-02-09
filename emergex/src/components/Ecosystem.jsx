@@ -5,6 +5,7 @@ import './Ecosystem.css'
 const Ecosystem = () => {
   const [isOpen, setIsOpen] = useState(false);
   const ecoRef = useRef(null);
+  const label = ["Blockchain/Web3 Companies", "Investors & VCs", "Government", "Non Profit Orgs.", "Talent Recruiters", "Educational Institutions"]
   const ecocontent = ecoRef.current;
   
   const rotate = (index, totalItems, padding=60) => {
@@ -17,7 +18,6 @@ const Ecosystem = () => {
     };
     
     const toggleOptions = () => {
-        
         setIsOpen((prevIsOpen) => !prevIsOpen);
   };
 
@@ -55,7 +55,7 @@ const Ecosystem = () => {
                             className='circle'
                             style={rotate(index, 6).span}
                         >
-                            circle
+                            {label[index]}
                             </span>
                         </li>
                     ))}
