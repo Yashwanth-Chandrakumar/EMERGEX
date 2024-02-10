@@ -10,7 +10,7 @@ export default function LandingPage() {
         const titleElement = titleRef.current;
 
         gsap.to(titleElement.children, {
-            y: -50,
+            y: -40,
             stagger: 0.05,
             delay: 2.8,
             duration: 0.5,
