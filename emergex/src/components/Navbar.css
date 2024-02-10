@@ -59,6 +59,7 @@ h3 {
 @media screen and (max-width:800px) {
     .navbar {
         padding-top: 1rem;
+        width: 100%;
     }
 
     .nav-logo {
@@ -82,7 +83,7 @@ h3 {
     }
 
     .navlist {
-        padding-right: 2.5rem;
+        padding-right: 1.5rem;
     }
 
     .nav-side>h3 {

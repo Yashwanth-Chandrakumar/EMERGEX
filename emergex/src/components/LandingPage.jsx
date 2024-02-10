@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import gsap from "gsap";
 import './LandingPage.css';
 import Navbar from './Navbar';
+import { isMobile } from 'react-device-detect';
 
 export default function LandingPage() {
     const titleRef = useRef(null);
@@ -27,51 +28,53 @@ export default function LandingPage() {
             }
         });
 
-        gsap.fromTo(".land-title", {
-            opacity: 1,
-            y:0,
+        if (isMobile) {
+            console.log("mobile detected");
+        } else {
+            gsap.fromTo(".land-title", {
+                opacity: 1,
+                y: 0,
+            }, {
+                y: 150,
+                opacity: 0,
+                scrollTrigger: {
+                    trigger: ".landing",
+                    start: "bottom bottom",
+                    end: "bottom top",
+                    scrub: true,
+                }
+            });
+            const tl = gsap.timeline();
+            tl.fromTo(".landing-description", {
+                opacity: 1,
+                y: 0,
+            }, {
+                y: 150,
+                opacity: 0,
+                scrollTrigger: {
+                    trigger: ".landing",
+                    start: "bottom bottom",
+                    end: "bottom top",
+                    scrub: true,
+                }
+            });
 
-        },
-        {
-            y: 150,
-            opacity: 0,
-            scrollTrigger: {
-                trigger: ".landing",
-                start: "bottom bottom",
-                end: "bottom top",
-                scrub: true,
-              }
-        })
-        // gsap.fromTo(".landing-description", {
-        //     opacity: 1,
-        //     y:0,
-
-        // },
-        // {
-        //     y: 150,
-        //     opacity: 0,
-        //     scrollTrigger: {
-        //         trigger: ".landing",
-        //         start: "bottom bottom",
-        //         end: "bottom top",
-        //         scrub: true,
-        //       }
-        // })
+        }
     }, []);
 
     return (
-        <div className='mainpage' >
-        <Navbar/>
-        <div className='landing'>
-            
-            <h1 ref={titleRef} className='land-title'>
-                {Array.from("EmergeX").map((letter, index) => (
-                    <div key={index} className="letter">{letter}</div>
-                ))}
+        <div className='mainpage'>
+            <Navbar />
+            <div className='landing'>
+
+                <h1 ref={titleRef} className='land-title'>
+                    {Array.from("EmergeX").map((letter, index) => (
+                        <div key={index} className="letter">{letter}</div>
+                    ))}
                 </h1>
-                
+
                 <h3 className='landing-description'>A Web3 community connecting students, companies, job seekers and all through events, hackathons  and meetups.</h3>
             </div>
-            </div>
+        </div>
     );
 }

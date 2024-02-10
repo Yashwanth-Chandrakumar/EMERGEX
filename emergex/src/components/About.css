@@ -27,14 +27,19 @@
     transition: transform .5s;
 }
 
+.about-container {
+    align-self: flex-end;
+    justify-self: flex-end;
+    width: 55%;
+
+}
+
 .about-description {
     font-size: 1.5rem;
-    align-self: flex-end;
-    justify-content: flex-end;
     padding-bottom: 2.5rem;
-    width: 55%;
     color: rgb(206, 203, 203);
     text-align: justify;
+    text-indent: 3rem;
 }
 
 @media screen and (max-width:800px) {
@@ -45,17 +50,23 @@
     }
 
     .about-title {
-        font-size: 4rem;
+        font-size: 3.5rem;
         clip-path: none;
+        padding-left: 2rem;
     }
 
     .about-title div {
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     }
 
+    .about-container {
+        padding-left: 1rem;
+        width: auto;
+        padding-right: 1rem;
+    }
+
     .about-description {
-        width: 90%;
-        padding: 1rem;
+        width: 100%;
         font-size: 1.1rem;
         text-align: justify;
         text-indent: 3rem;

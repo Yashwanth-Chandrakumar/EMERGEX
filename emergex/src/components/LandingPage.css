@@ -58,11 +58,14 @@
 
     .landing {
         align-items: start;
-        margin-left: 2rem;
+        margin-left: 0rem;
+        margin-top: 0rem;
     }
 
     .land-title {
         font-size: 3.5rem;
+        margin-top: 6rem;
+        padding-left: 2rem;
         clip-path: none;
     }
 
@@ -74,6 +77,7 @@
     .landing-description {
         font-size: 1rem;
         width: 80%;
+        padding-left: 2rem;
         text-align: left;
         margin-top: -2rem;
     }

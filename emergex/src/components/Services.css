@@ -45,37 +45,70 @@
     margin-bottom: 2rem;
 }
 
-.service:nth-child(1) {
-    transform: translateX(-500px);
-    opacity: 0;
-    transition: transform 1s opacity 1s;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+@media screen and (min-width:801px) {
+
+    .service:nth-child(1) {
+        transform: translateX(-500px);
+        opacity: 0;
+        transition: transform 1s opacity 1s;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .service:nth-child(2) {
+        transform: translateX(500px);
+        opacity: 0;
+        transition: transform 1s opacity 1s;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .service:nth-child(3) {
+        transform: translateX(-500px);
+        opacity: 0;
+        transition: transform 1s opacity 1s;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .service:nth-child(4) {
+        transform: translateX(500px);
+        opacity: 0;
+        transition: transform 1s opacity 1s;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .service:nth-child(5) {
+        transform: translateX(-500px);
+        opacity: 0;
+        transition: transform 1s opacity 1s;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
 }
 
-.service:nth-child(2) {
-    transform: translateX(500px);
-    opacity: 0;
-    transition: transform 1s opacity 1s;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-}
+@media screen and (max-width:800px) {
+    .services {
+        height: auto;
+    }
 
-.service:nth-child(3) {
-    transform: translateX(-500px);
-    opacity: 0;
-    transition: transform 1s opacity 1s;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-}
+    .services h1 {
+        padding-left: 2rem;
+        font-size: 3.5rem;
+    }
 
-.service:nth-child(4) {
-    transform: translateX(500px);
-    opacity: 0;
-    transition: transform 1s opacity 1s;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-}
+    .services h4 {
+        padding-left: 2rem;
+        font-size: 1.1rem;
+    }
 
-.service:nth-child(5) {
-    transform: translateX(-500px);
-    opacity: 0;
-    transition: transform 1s opacity 1s;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    .services-content {
+        margin-left: 0rem;
+    }
+
+    .plate {
+        font-size: 1rem;
+        width: 60vw;
+    }
+
+    .service {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
