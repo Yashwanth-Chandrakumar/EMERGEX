@@ -1,5 +1,6 @@
 .services {
-    height: 140vh;
+    /* 140vh -> 150 vh modified for layout collide */
+    height: 150vh; 
     width: 100%;
     background-color: black;
     margin: 0;
@@ -11,6 +12,7 @@
     padding-left: 5rem;
     margin: 0;
     font-size: 6.5rem;
+    font-weight: bold;
 }
 
 .services h4 {
@@ -38,7 +40,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    width: 40rem;
+    width: 45rem;
     background: rgb(111, 228, 125);
     background: linear-gradient(333deg, rgba(111, 228, 125, 1) 15%, rgba(82, 112, 255, 1) 100%);
     border-radius: 10px;

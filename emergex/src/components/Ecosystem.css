@@ -1,10 +1,85 @@
 .ecosystem {
-    background-color: black;
+    background-color: var(--text-color);
+    color: var(--bg-color);
     height: 100vh;
-    margin: 0;
-    color: white;
+    position: relative;
 }
 
-.ecosystem h1 {
-    margin: 0;
+.eco-content {
+    height: 75%;
+    align-items: center;
+    justify-content: center;
+}
+
+.eco-title {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.circle-group {
+    position: absolute;
+}
+
+.ecosystem li {
+    position: absolute;
+    width: 0;
+    height: 0%;
+    margin: -20% 50%;
+    transition: all 0.8s ease-in-out;
+}
+
+
+.eco-content li .circle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -10%;
+    background-image: linear-gradient(to right bottom, #415fe5, #0086f8, #00a3f4, #00bce4, #15d0d2);
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    /*  */
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    margin: 80px 0px;
+    /*  */
+    transition: all .8s ease-in-out;
+}
+
+.eco-content.open li .circle {
+    width: 150px;
+    height: 150px;
+    line-height: 1.2;
+    margin: 100px 0px;
+    font-size: 20px;
+}
+
+.eco-btn {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    background: #428bca;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    left: 80%;
+}
+
+.eco-label {
+    font-size: 44px;
+    z-index: 1;
+}
+
+.gradient-text {
+    background: linear-gradient(333deg, rgba(113, 231, 122, 1) 21%, rgba(2, 106, 252, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
 }

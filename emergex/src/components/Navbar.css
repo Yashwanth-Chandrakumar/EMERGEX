@@ -24,6 +24,7 @@ h3 {
     width: 70px;
     border-radius: 10rem;
     background-image: linear-gradient(to right bottom, #415fe5, #0086f8, #00a3f4, #00bce4, #15d0d2);
+    flex-shrink: 0;
 }
 
 .nav-logo-container {

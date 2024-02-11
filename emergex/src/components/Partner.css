@@ -1,4 +1,4 @@
-/* .partner-container {
+.partner-container {
     background-color: var(--text-color);
     color: var(--bg-color);
     height: 100vh;
@@ -10,6 +10,9 @@
     width: 75%;
     text-align: center;
     font-weight: 600;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 .partner-content img {
@@ -26,4 +29,9 @@
     justify-content: center;
     text-align: center;
     width: 100%;
+}
+
+/* .partner-title h1 .char{
+    transform: translateY(140px);
+    transition: transform .5s;
 } */
