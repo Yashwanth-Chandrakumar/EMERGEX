@@ -1,0 +1,71 @@
+.gallery {
+    height: 175vh;
+    background: black;
+    position: relative;
+    display: flex;
+    gap: 2vw;
+    padding: 2vw;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.column {
+    position: relative;
+    height: 100%;
+    width: 25%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.column .imageContainer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.column:nth-of-type(1) {
+    top: -45%;
+}
+
+.column:nth-of-type(2) {
+    top: -95%;
+}
+
+.column:nth-of-type(3) {
+    top: -45%;
+}
+
+.column:nth-of-type(4) {
+    top: -75%;
+}
+
+.spacer {
+    height: 50vh;
+    background-color: black;
+    color: white;
+}
+
+.spacer h1 {
+    margin: 0;
+    padding-left: 3.5rem;
+    font-size: 7rem;
+    padding-top: 6rem;
+}
+
+@media screen and (max-width:800px) {
+    .spacer {
+        height: 30vh;
+    }
+
+    .spacer h1 {
+        font-size: 3.5rem;
+        padding-left: 2rem;
+    }
+}

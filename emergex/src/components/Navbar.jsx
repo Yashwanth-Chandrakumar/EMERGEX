@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import './Navbar.css';
 import DarkModeToggle from './DarkMode';
-
+import GsapMagnetic from './GsapMagnetic';
 export default function Navbar() {
     
     const navbarRef = useRef(null);
@@ -65,7 +65,9 @@ export default function Navbar() {
     return (
         <div className='navbar' ref={navbarRef} >
             <div className='nav-logo-container'>
-                <div className='nav-logo'></div>
+                <GsapMagnetic>
+                    <div className='nav-logo'></div>
+                    </GsapMagnetic>
             </div>
             <div className='nav-side'>
                 <h3>LEARN | CONNECT | DEVELOP</h3>

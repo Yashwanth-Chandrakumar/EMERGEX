@@ -2,18 +2,28 @@
     background-color: var(--text-color);
     color: var(--bg-color);
     height: 100vh;
+    width: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .eco-content {
     height: 75%;
+    width: 100%;
     align-items: center;
     justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.eco-title {
-    font-size: 50px;
-    font-weight: 600;
+.eco-title h1 {
+    font-size: 6.5rem;
+    padding-left: 5rem;
+    width: 100%;
+    margin: 0;
+    font-weight: BOLD;
 }
 
 .circle-group {
@@ -35,7 +45,7 @@
     justify-content: center;
     align-items: center;
     bottom: -10%;
-    background-image: linear-gradient(to right bottom, #415fe5, #0086f8, #00a3f4, #00bce4, #15d0d2);
+    background: linear-gradient(333deg, rgba(111, 228, 125, 1) 15%, rgba(82, 112, 255, 1) 100%);
     border-radius: 50%;
     text-align: center;
     overflow: hidden;
@@ -82,4 +92,32 @@
     background-clip: text;
     color: transparent;
     font-weight: 600;
+}
+
+@media screen and (max-width:800px) {
+    .eco-title {
+        padding-left: 0;
+    }
+
+    .eco-title h1 {
+        margin: 0;
+        font-size: 3.5rem;
+        padding-left: 2rem;
+    }
+
+    .ecosystem {
+        margin-top: -0.1rem;
+        overflow: hidden;
+    }
+
+    .eco-label {
+        font-size: 2rem;
+    }
+
+    .eco-content.open li .circle {
+        width: 120px;
+        height: 120px;
+        margin: 70px 0px;
+        font-size: 1rem;
+    }
 }

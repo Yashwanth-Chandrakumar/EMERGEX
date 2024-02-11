@@ -7,6 +7,7 @@ import Traction from './components/Traction'
 import Services from './components/Services'
 import Partner from './components/Partner'
 import Ecosystem from './components/Ecosystem'
+import Gallery from './components/Gallery'
 function App() {
   
   return (
@@ -19,6 +20,7 @@ function App() {
         <Services />
         <Ecosystem />
         <Partner />
+        <Gallery/>
       </div>
       </ReactLenis>
   )
