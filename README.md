@@ -15,3 +15,6 @@ to-do : <br>
 =
  => Update traction content <br>
  => partner link, dark color logos <br>
+
+Correction : <br>
+partners laa issue eruku
