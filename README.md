@@ -9,9 +9,14 @@ Day 3 : Feb 5 : 2nd Layer done (Landing and About page) <br>
 Day 4 : Feb 6: Dark and Light mode , minor gsap edits<br>
 Day 5 : Feb 7: Services and traction added<br>
 Day 6 : Feb 8: Responsiveness added to loading and about page <br>
-Day 7 : Feb 9: Traction and services page made responsiveness
+Day 7 : Feb 9: Traction and services page made responsiveness <br>
+Day 8 : Feb 10: Complete website made resposive <br>
+Day 9 : Feb 11: Gallery page added with GSAP scroll <br>
 
 to-do : <br> 
 =
  => Update traction content <br>
  => partner link, dark color logos <br>
+
+Correction : <br>
+partners laa issue eruku
