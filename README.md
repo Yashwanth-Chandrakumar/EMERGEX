@@ -11,7 +11,7 @@ Day 5 : Feb 7: Services and traction added<br>
 Day 6 : Feb 8: Responsiveness added to loading and about page <br>
 Day 7 : Feb 9: Traction and services page made responsiveness <br>
 Day 8 : Feb 10: Complete website made resposive <br>
-Day 9 : Feb 11: Galley page added with GSAP scroll <br>
+Day 9 : Feb 11: Gallery page added with GSAP scroll <br>
 
 to-do : <br> 
 =
