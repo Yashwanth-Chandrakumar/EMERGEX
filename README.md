@@ -19,4 +19,6 @@ to-do : <br>
  => partner link, dark color logos <br>
 
 Correction : <br>
-partners laa issue eruku
+https://docs.google.com/document/d/1y52NUKOdO52sQ8im03NqDI-YK7x7opmsptU2NMaq_uc/edit
+
+
