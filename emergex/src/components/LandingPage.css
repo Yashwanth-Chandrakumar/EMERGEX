@@ -1,7 +1,7 @@
 .mainpage {
     height: 100vh;
     margin: 0;
-    width: 100%;
+    width: 100vw;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -51,34 +51,83 @@
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-@media screen and (max-width:800px) {
+@media screen and (min-width: 1300px) {
+    .land-title div, .land-title div:last-child {
+        transform: translateY(160px);
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .land-title {
+        font-size: 9rem;
+        padding-top: 9rem;
+    }
+
+    .land-title div {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 110%, 0% 110%);
+    }
+
+    .landing-description {
+        font-size: 1.3rem;
+        width: 50%;
+        padding: 0rem 0rem 2rem 0rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .land-title {
+        font-size: 6rem;
+        padding-top: 6rem;
+    }
+
+    .landing-description {
+        font-size: 1rem;
+        width: 60%;
+        padding: 0rem 0rem 2rem 0rem;
+        margin-top: -0.8rem;
+    }
+    
+}
+
+@media screen and (max-width:450px) {
     .mainpage {
-        height: 40vh;
+        height: 100vh;
     }
 
     .landing {
         align-items: start;
-        margin-left: 0rem;
-        margin-top: 0rem;
+        margin-left: 2rem;
     }
 
     .land-title {
-        font-size: 3.5rem;
-        margin-top: 6rem;
-        padding-left: 2rem;
-        clip-path: none;
+        font-size: 4rem;
+        padding-top: 2rem;
     }
 
     .land-title div {
         transform: translateY(100px);
-        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 110%, 0% 110%);
     }
 
     .landing-description {
         font-size: 1rem;
         width: 80%;
-        padding-left: 2rem;
         text-align: left;
-        margin-top: -2rem;
+        margin-top: -1rem;
+        line-height: 1.3rem;
     }
+}
+
+@media screen and (max-width: 350px) {
+    .land-title {
+        font-size: 3rem;
+    }
+
+    .landing-description {
+        font-size: 0.9rem;
+        width: 90%;
+        text-align: left;
+        margin-top: -1rem;
+    }
+    
 }
