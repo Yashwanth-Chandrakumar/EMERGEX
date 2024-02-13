@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import './Navbar.css';
 import DarkModeToggle from './DarkMode';
 import GsapMagnetic from './GsapMagnetic';
+
 export default function Navbar() {
     
     const navbarRef = useRef(null);
