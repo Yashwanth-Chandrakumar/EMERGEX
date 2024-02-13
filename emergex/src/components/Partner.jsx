@@ -1,52 +1,56 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 import './Partner.css';
 import push from '../assets/img/push.png';
 import shardeum from '../assets/img/shardeum.png';
 import buildbear from '../assets/img/buildbear.svg';
-gsap.registerPlugin(ScrollTrigger);
 
 const Partner = () => {
+    gsap.registerPlugin(ScrollTrigger);
     const partnerRef = useRef(null);
-
-        useEffect(() => {
-            const about = partnerRef.current
-            gsap.to(about.children, {
-                y: 0,
-                stagger: 0.05,
-                delay: 0.5,
-                duration: 0.5,
-              ease: "back.out",
-              scrollTrigger: {
-                  trigger: about,
-                },
-            });
-        }, []);
-
+    
+    useEffect(() => {
+        gsap.to(partnerRef.current.children, {
+            y: 0,
+            opacity: 1,
+            stagger: 0.05,
+            delay: 0.5,
+            duration: 1,
+            ease: "back.out",
+            scrollTrigger: {
+                trigger: partnerRef.current,
+            },
+        });
+    }, []);
         
 
     return (
-        <div className='partner-container container-fluid d-flex'>
-            <div className='partner-title col-md-5 d-flex align-item-center my-auto'>
-                <h1 className='mx-auto d-flex flex-column' ref={partnerRef}>
-                {Array.from("PARTNERS").map((letter, index) => (
-                    <div key={index} className="letter">{letter}</div>
-                ))}
+        <div className='partner-container'>
+            <div className='partner-title'>
+                <h1 ref={partnerRef}>
+                    {"Trusted By Partners".split(" ").map((word, wordIndex) => (
+                        <div key={wordIndex} className='word'>
+                            {word.split("").map((char, charIndex) => (
+                                <span key={charIndex} className='partner-title-char'>{char}</span>
+                            ))}
+                            </div>
+                    ))}
                     </h1>
             </div>
-            <div className='partner-content col-md-7 d-flex my-auto'>
+            <div className='partner-content'>
                 <span>
-                    <img src={push} alt='push-protocol' />
-                    <p className='partner-text mt-5'>Push Protocol</p>
+                    <img src={push} alt='push-protocol'/>
+                    <p className='partner-text'>Push Protocol</p>
                 </span>
                 <span>
-                    <img src={shardeum} alt='shardeum' />
-                    <p className='partner-text mt-5'>Shardeum</p>
+                    <img src={shardeum} alt='shardeum'/>
+                    <p className='partner-text'>Shardeum</p>
                 </span>
                 <span>
-                    <img src={buildbear} alt="build bear" />
-                    <p className='partner-text mt-5'>Build Bear</p>
+                    <img src={buildbear} alt="build bear"/>
+                    <p className='partner-text'>Build Bear</p>
                 </span>
             </div>
         </div>
