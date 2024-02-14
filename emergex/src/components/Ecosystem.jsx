@@ -82,9 +82,9 @@ const Ecosystem = () => {
   
   return (
     <div className='ecosystem'>
-        <h1 className='eco-title col-md-12 m-0 ps-5 py-5'>
+        <span className='eco-title col-md-12 m-0 ps-5 py-5'>
             <h1>OUR ECOSYSTEM</h1>
-            </h1>
+            </span>
         <div className='eco-content col-md-12 d-flex' ref={ecoRef}>
             <ul className="circle-group">
                 {[1, 2, 3, 4, 5, 6].map((item, index) => (

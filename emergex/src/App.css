@@ -12,6 +12,7 @@
     --fontSizeIntro: 3vw;
     --text-color: black;
     --bg-color: #fff;
+    --progress1: 0;
 }
 
 @media (max-width: 1000px) {
@@ -31,7 +32,7 @@ body {
     margin: 0;
     font-family: var(--font1);
     color: var(--text-color);
-    background-color: var(--bg-color);
+    background-color: black;
     overflow-x: hidden;
 }
 

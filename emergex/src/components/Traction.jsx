@@ -67,15 +67,15 @@ export default function Traction() {
           xPercent: -100 * (panels.length - 1),
           ease: "none",
           scrollTrigger: {
+            id:"traction",
             trigger: slider.current,
             pin: true,
             scrub: 1,
             snap: 1 / (panels.length - 1),
             end: () => "+=" + slider.current.offsetWidth,
-  
           }
         });
-      }, component);
+      }, component.current);
       return () => ctx.revert();
     });
   }

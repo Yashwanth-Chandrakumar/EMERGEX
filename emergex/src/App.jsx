@@ -8,6 +8,7 @@ import Services from './components/Services'
 import Partner from './components/Partner'
 import Ecosystem from './components/Ecosystem'
 import Gallery from './components/Gallery'
+import Exit from './components/Exit'
 function App() {
   
   return (
@@ -16,11 +17,13 @@ function App() {
         <Introloader />
         <LandingPage />
         <About />
-        <Traction />
-        <Services />
+         <Traction />
+       <Services />
         <Ecosystem />
         <Partner />
-        <Gallery/>
+        <Gallery /> 
+          {/* <Exit /> */}
+        
       </div>
       </ReactLenis>
   )

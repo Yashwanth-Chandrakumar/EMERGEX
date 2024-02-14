@@ -33,15 +33,8 @@ export default function Introloader() {
             .to(".intro-loader", 0.1, { fontFamily: "Poppins", innerHTML:"Grow" })
             .to(".intro-loader", 0.1, { fontFamily: "Titillium Web", innerHTML:"Grow" })
 
-        var loaderTL = gsap.timeline();
-        loaderTL.to(".number-loader", {
-                duration: 2.7, 
-                innerHTML: "100",
-                roundProps: "innerHTML",
-                ease: "none",
-            })
+        
             .to(".intro", 1, { scaleY: 0, ease: "expo.inOut" })
-            .to(".intro__red", 1, { scaleY: 2, ease: "expo.inOut" }, "-=1.25");
 
     }, []);
 
@@ -50,8 +43,6 @@ export default function Introloader() {
             <main className="flex__col">
                 <section className="intro flex">
                     <h1 className='intro-loader'>Loading<br/></h1>
-                    <h1 className="number-loader">0</h1>
-                    <div className="intro__red flex"><div>BUILD | CREATE | DEVELOP</div></div>
                 </section>
             </main>
         </div>

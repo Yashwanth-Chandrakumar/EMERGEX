@@ -32,33 +32,14 @@ main.flex__col {
     transform-origin: top;
 }
 
-.intro__red {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30%;
-    background-color: #f21010;
-    font-family: var(--font1);
-    font-size: 30vw;
-    font-weight: 900;
-    line-height: 30vh;
-    overflow: hidden;
-    color: transparent;
-    text-align: center;
-    -webkit-text-stroke: 1px #222;
-    transform: scaleY(0);
-    transform-origin: bottom;
+
+
+.intro-loader {
+    font-size: 6rem;
 }
 
-.intro__red div {
-    transform: scaleX(0.5) scaleY(1.5);
-    letter-spacing: -1vw;
-}
-
-.number-loader {
-    position: fixed;
-    top: 50%;
-    left: 70%;
-    font-size: 10vw;
+@media screen and (max-width:800px) {
+    .intro-loader {
+        font-size: 3rem;
+    }
 }

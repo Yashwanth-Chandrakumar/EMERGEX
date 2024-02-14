@@ -2,19 +2,21 @@
     position: absolute;
     display: flex;
     height: auto;
-    padding-top: 2.5rem;
+    margin-top: 2rem;
     width: 100%;
-    justify-content: end;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     opacity: 0;
     transform: translateY(-100px);
     transition: transform 1s opacity 1s;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 h3 {
 
-    font-size: 1.15vw;
+    font-size: 1.2vw;
     font-weight: normal;
     margin: 0;
 }
@@ -27,21 +29,11 @@ h3 {
     flex-shrink: 0;
 }
 
-.nav-logo-container {
-    padding: 3rem;
-    margin-top: -1.5rem;
-    margin-left: 1.5rem;
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .nav-side {
     display: flex;
-    width: 30%;
     justify-content: space-between;
+    align-items: center;
+    width: 60%;
 }
 
 .nav-side>h3 {
@@ -51,6 +43,11 @@ h3 {
 .navlist {
     padding-right: 2rem;
     opacity: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .navlist li {
