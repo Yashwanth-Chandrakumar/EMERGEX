@@ -3,15 +3,15 @@
     display: flex;
     height: auto;
     margin-top: 2rem;
-    width: 100%;
+    width: 95%;
     align-items: center;
     justify-content: space-around;
     opacity: 0;
     transform: translateY(-100px);
     transition: transform 1s opacity 1s;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    border: 1px solid black;
-    border-radius: 5px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 h3 {
@@ -22,8 +22,10 @@ h3 {
 }
 
 .nav-logo {
-    height: 70px;
-    width: 70px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 50px;
+    width: 50px;
     border-radius: 10rem;
     background-image: linear-gradient(to right bottom, #415fe5, #0086f8, #00a3f4, #00bce4, #15d0d2);
     flex-shrink: 0;
@@ -50,9 +52,6 @@ h3 {
     align-items: center;
 }
 
-.navlist li {
-    padding-bottom: .3rem;
-}
 
 @media screen and (max-width:800px) {
     .navbar {
