@@ -12,9 +12,9 @@ Day 6 : Feb 8: Responsiveness added to loading and about page <br>
 Day 7 : Feb 9: Traction and services page made responsiveness <br>
 Day 8 : Feb 10: Complete website made resposive <br>
 Day 9 : Feb 11: Gallery page added with GSAP scroll <br>
-Day 10 : Feb 12 : Minor changes in gsap
-Day 11 : Feb 13 : Changes implemented as per client
-Day 12 : Feb 14 : Contact page and styling in process
+Day 10 : Feb 12 : Minor changes in gsap <br>
+Day 11 : Feb 13 : Changes implemented as per client <br>
+Day 12 : Feb 14 : Contact page and styling in process <br>
 
 to-do : <br> 
 =
