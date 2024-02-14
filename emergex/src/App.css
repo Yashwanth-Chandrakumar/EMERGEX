@@ -43,3 +43,8 @@ body.dark {
 .dark-mode-toggle {
     pointer-events: auto;
 }
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}

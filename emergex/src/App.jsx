@@ -8,6 +8,7 @@ import Services from './components/Services'
 import Partner from './components/Partner'
 import Ecosystem from './components/Ecosystem'
 import Gallery from './components/Gallery'
+import Footer from './components/Footer'
 function App() {
   
   return (
@@ -20,7 +21,8 @@ function App() {
         <Services />
         <Ecosystem />
         <Partner />
-        <Gallery/>
+        {/* <Gallery/> */}
+        <Footer />
       </div>
       </ReactLenis>
   )
