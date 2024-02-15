@@ -11,16 +11,19 @@ const Partner = () => {
     const partnerRef = useRef(null);
 
         useEffect(() => {
-            const about = partnerRef.current
-            gsap.to(about.children, {
+            const partner = partnerRef.current
+            gsap.to(partner.children, {
                 y: 0,
                 stagger: 0.05,
                 delay: 0.5,
                 duration: 0.5,
               ease: "back.out",
               scrollTrigger: {
-                  trigger: about,
+                  trigger: partner,
                 },
+                onComplete: () => {
+                  console.log("Partners animation")
+              }
             });
         }, []);
 

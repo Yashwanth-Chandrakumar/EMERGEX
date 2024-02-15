@@ -1,6 +1,6 @@
 .ecosystem {
-    background-color: var(--text-color);
-    color: var(--bg-color);
+    background-color: black;
+    color: white;
     height: 100vh;
     width: 100%;
     position: relative;
@@ -24,6 +24,13 @@
     width: 100%;
     margin: 0;
     font-weight: BOLD;
+    display: flex;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.eco-title h1 div {
+    transform: translateY(140px);
+    transition: transform .5s;
 }
 
 .circle-group {

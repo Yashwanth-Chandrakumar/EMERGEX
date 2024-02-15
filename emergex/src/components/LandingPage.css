@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(235, 235, 235, 255);
+    background-color: var(--land-bg);
 }
 
 .land-title {

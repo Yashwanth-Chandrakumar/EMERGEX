@@ -10,8 +10,10 @@
     transform: translateY(-100px);
     transition: transform 1s opacity 1s;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    background-color: white;
+    background-color: var(--bg-color);
     border-radius: 10px;
+    color: var(--text-color);
+
 }
 
 h3 {
@@ -38,9 +40,6 @@ h3 {
     width: 60%;
 }
 
-.nav-side>h3 {
-    color: rgb(130, 130, 130);
-}
 
 .navlist {
     padding-right: 2rem;

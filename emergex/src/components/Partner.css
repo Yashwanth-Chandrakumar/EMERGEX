@@ -1,6 +1,6 @@
 .partner-container {
-    background-color: var(--text-color);
-    color: var(--bg-color);
+    background-color: black;
+    color: white;
     height: 70vh;
     width: 100%;
     display: flex;

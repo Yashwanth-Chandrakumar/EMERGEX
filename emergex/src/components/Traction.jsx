@@ -67,7 +67,6 @@ export default function Traction() {
           xPercent: -100 * (panels.length - 1),
           ease: "none",
           scrollTrigger: {
-            id:"traction",
             trigger: slider.current,
             pin: true,
             scrub: 1,
@@ -77,10 +76,11 @@ export default function Traction() {
         });
       }, component.current);
       return () => ctx.revert();
-    });
+    },[]);
   }
 
   return (
+    <div className='pin'>
     <div className="traction" ref={component}>
       <div ref={slider} className="container">
         <div className="cursor"></div>
@@ -152,6 +152,7 @@ export default function Traction() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      </div>
   );
 }
