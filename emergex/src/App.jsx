@@ -9,6 +9,7 @@ import Partner from './components/Partner'
 import Ecosystem from './components/Ecosystem'
 import Gallery from './components/Gallery'
 import Footer from './components/Footer'
+
 function App() {
   
   return (

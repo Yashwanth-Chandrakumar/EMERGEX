@@ -1,6 +1,12 @@
 .footer {
-    display: block;
+    overflow: hidden;
     height: 70vh;
+    width: 100%;
+}
+
+.footer-container {
+    display: block;
+    height: 100%;
     width: 100%;
     background-color: #ececec9e;
     color: var(--text-color);
@@ -10,7 +16,7 @@
     margin: 0;
     font-size: 36px;
     font-weight: 600;
-    padding: 2rem 0rem 0rem 6rem;
+    padding: 3rem 0rem 0rem 6rem;
 }
 
 .footer__content {
