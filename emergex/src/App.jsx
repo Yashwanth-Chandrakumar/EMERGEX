@@ -22,7 +22,7 @@ function App() {
         <Services />
         <Ecosystem />
         <Partner />
-        {/* <Gallery/> */}
+        <Gallery/>
         <Footer />
       </div>
       </ReactLenis>

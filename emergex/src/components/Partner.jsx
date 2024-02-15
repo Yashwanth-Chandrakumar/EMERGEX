@@ -15,8 +15,6 @@ const Partner = () => {
         gsap.to(partnerRef.current.children, {
             y: 0,
             opacity: 1,
-            stagger: 0.05,
-            delay: 0.5,
             duration: 1,
             ease: "back.out",
             scrollTrigger: {
