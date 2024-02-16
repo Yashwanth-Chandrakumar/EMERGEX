@@ -1,13 +1,14 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 import './Partner.css';
 import push from '../assets/img/push.png';
 import shardeum from '../assets/img/shardeum.png';
 import buildbear from '../assets/img/buildbear.svg';
-gsap.registerPlugin(ScrollTrigger);
 
 const Partner = () => {
+    gsap.registerPlugin(ScrollTrigger);
     const partnerRef = useRef(null);
 
         useEffect(() => {
@@ -40,18 +41,18 @@ const Partner = () => {
                 ))}
                     </h1>
             </div>
-            <div className='partner-content col-md-7 d-flex my-auto'>
+            <div className='partner-content'>
                 <span>
-                    <img src={push} alt='push-protocol' />
-                    <p className='partner-text mt-5'>Push Protocol</p>
+                    <img src={push} alt='push-protocol'/>
+                    <p className='partner-text'>Push Protocol</p>
                 </span>
                 <span>
-                    <img src={shardeum} alt='shardeum' />
-                    <p className='partner-text mt-5'>Shardeum</p>
+                    <img src={shardeum} alt='shardeum'/>
+                    <p className='partner-text'>Shardeum</p>
                 </span>
                 <span>
-                    <img src={buildbear} alt="build bear" />
-                    <p className='partner-text mt-5'>Build Bear</p>
+                    <img src={buildbear} alt="build bear"/>
+                    <p className='partner-text'>Build Bear</p>
                 </span>
             </div>
         </div>

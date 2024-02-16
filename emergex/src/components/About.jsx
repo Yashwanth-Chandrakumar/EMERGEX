@@ -12,7 +12,6 @@ export default function About() {
     gsap.to(about.children, {
         y: 0,
         stagger: 0.05,
-        delay: 0.5,
         duration: 0.5,
       ease: "back.out",
       scrollTrigger: {

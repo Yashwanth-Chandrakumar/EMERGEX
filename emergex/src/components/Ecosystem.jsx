@@ -74,7 +74,7 @@ const Ecosystem = () => {
           end: "bottom 45%",
           toggleActions: "restart pause resume pause",
         },
-        duration: 1,
+        duration: 2,
         ease: "back.out(1.7)",
         marker:true,
       }
