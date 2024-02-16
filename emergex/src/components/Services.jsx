@@ -17,7 +17,8 @@ export default function Services() {
           console.log("services animation completed");
         },
         scrollTrigger: {
-          trigger: ".service"
+          trigger: ".service",
+          // markers:true
         }
       });
     }, []);

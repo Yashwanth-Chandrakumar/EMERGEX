@@ -73,7 +73,7 @@ export default function LandingPage() {
                     ))}
                 </h1>
 
-                <h3 className='landing-description'>A Web3 community connecting students, companies, job seekers and all through events, hackathons  and meetups.</h3>
+                <h3 className='landing-description'>Your one stop solution for all emerging technologies.</h3>
             </div>
         </div>
     );

@@ -21,7 +21,7 @@ const Ecosystem = () => {
     };
     
   const toggleOptions = () => {
-      setIsOpen((prevIsOpen) => !prevIsOpen);
+    setIsOpen((prevIsOpen) => !prevIsOpen);
   };
  
   useEffect(() => {
@@ -57,6 +57,7 @@ const Ecosystem = () => {
           toggleOptions();
         },
         scrub: true,
+        // markers:true,
       });
     }
 
@@ -75,6 +76,7 @@ const Ecosystem = () => {
         },
         duration: 1,
         ease: "back.out(1.7)",
+        marker:true,
       }
     );
     const title = titleref.current

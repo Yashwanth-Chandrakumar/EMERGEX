@@ -12,18 +12,20 @@ const Partner = () => {
 
         useEffect(() => {
             const partner = partnerRef.current
-            gsap.to(partner.children, {
+            gsap.to(".partner-letter", {
                 y: 0,
                 stagger: 0.05,
                 delay: 0.5,
                 duration: 0.5,
-              ease: "back.out",
-              scrollTrigger: {
-                  trigger: partner,
-                },
+                ease: "back.out",
                 onComplete: () => {
-                  console.log("Partners animation")
-              }
+                    console.log("Partners animation")
+                },
+              scrollTrigger: {
+                  trigger: ".partner-letter",
+                //   markers:true,
+                },
+                
             });
         }, []);
 
@@ -32,9 +34,9 @@ const Partner = () => {
     return (
         <div className='partner-container container-fluid d-flex'>
             <div className='partner-title col-md-5 d-flex align-item-center my-auto'>
-                <h1 className='mx-auto d-flex flex-column' ref={partnerRef}>
+                <h1 className='mx-auto d-flex flex-column partner-title' ref={partnerRef}>
                 {Array.from("PARTNERS").map((letter, index) => (
-                    <div key={index} className="letter">{letter}</div>
+                    <div key={index} className="partner-letter">{letter}</div>
                 ))}
                     </h1>
             </div>
