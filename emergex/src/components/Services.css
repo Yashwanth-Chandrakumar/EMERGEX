@@ -1,5 +1,5 @@
 .services {
-    height: 150vh; 
+    height: 150vh;
     width: 100%;
     background-color: black;
     margin: 0;
@@ -25,7 +25,7 @@
 }
 
 .services-content {
-    margin: 3rem 0rem 3rem 5rem;
+    margin-left: 0rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -87,17 +87,21 @@
         height: 140vh;
         width: 100%;
     }
+
     .services h1 {
         padding-left: 4rem;
         font-size: 4.5rem;
     }
+
     .services h4 {
         padding-left: 5rem;
         font-size: 1.3rem;
     }
+
     .services-content {
         margin: 2rem 0rem 2rem 1.5rem;
     }
+
     .plate {
         font-size: 2rem;
         width: 50%;
@@ -111,17 +115,21 @@
         height: 130vh;
         width: 100%;
     }
+
     .services h1 {
         padding-left: 3rem;
         font-size: 3.5rem;
     }
+
     .services h4 {
         padding-left: 4rem;
         font-size: 1.1rem;
     }
+
     .services-content {
         margin: 2rem 0rem 2rem 1.5rem;
     }
+
     .plate {
         font-size: 1.5rem;
         width: 60%;
@@ -135,19 +143,23 @@
         height: 120vh;
         width: 100%;
     }
+
     .services h1 {
         padding-left: 2rem;
         font-size: 2.5rem;
     }
+
     .services h4 {
         padding-left: 2rem;
         font-size: 1rem;
         text-indent: 3rem;
         text-align: justify;
     }
+
     .services-content {
         margin: 2rem 0rem 2rem 0rem;
     }
+
     .plate {
         font-size: 1.2rem;
         width: 60%;
@@ -155,41 +167,44 @@
         font-weight: bold;
         margin-bottom: 2rem;
     }
+
     .service:nth-child(1) {
         transform: translateX(-50px);
         opacity: 0;
     }
-    
+
     .service:nth-child(2) {
         transform: translateX(50px);
         opacity: 0;
     }
-    
+
     .service:nth-child(3) {
         transform: translateX(-50px);
         opacity: 0;
     }
-    
+
     .service:nth-child(4) {
         transform: translateX(50px);
         opacity: 0;
     }
-    
+
     .service:nth-child(5) {
         transform: translateX(-50px);
         opacity: 0;
     }
-}   
+}
 
-@media screen and (min-width: 300px) and (max-width: 380px){
+@media screen and (min-width: 300px) and (max-width: 380px) {
     .services {
         height: 105vh;
         width: 100%;
     }
+
     .services h1 {
         padding-left: 1.5rem;
         font-size: 2rem;
     }
+
     .services h4 {
         margin-top: 0.7rem;
         padding-left: 1.5rem;
@@ -197,9 +212,11 @@
         text-indent: 3rem;
         text-align: justify;
     }
+
     .services-content {
         margin: 2rem 0rem 2rem 0rem;
     }
+
     .plate {
         font-size: 1rem;
         padding: 1rem;
@@ -208,26 +225,27 @@
         font-weight: bold;
         margin-bottom: 1.5rem;
     }
+
     .service:nth-child(1) {
         transform: translateX(-50px);
         opacity: 0;
     }
-    
+
     .service:nth-child(2) {
         transform: translateX(50px);
         opacity: 0;
     }
-    
+
     .service:nth-child(3) {
         transform: translateX(-50px);
         opacity: 0;
     }
-    
+
     .service:nth-child(4) {
         transform: translateX(50px);
         opacity: 0;
     }
-    
+
     .service:nth-child(5) {
         transform: translateX(-50px);
         opacity: 0;

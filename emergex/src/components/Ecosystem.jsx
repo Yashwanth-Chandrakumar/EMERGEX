@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
+import React, { useState, useEffect, useRef} from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -10,7 +10,7 @@ const Ecosystem = () => {
   const ecoRef = useRef(null);
   const label = ["Blockchain/ Web3 Companies", "Investors & VCs", "Government", "Non Profit Orgs.", "Talent Recruiters", "Educational Institutions"]
   const ecocontent = ecoRef.current;
-
+  const titleref = useRef(null)
   const rotate = (index, totalItems, padding=60) => {
       const temp = isOpen ? (-360 * 2 / totalItems) * index : 0;
       const angle = temp + padding * index;
@@ -21,9 +21,9 @@ const Ecosystem = () => {
     };
     
   const toggleOptions = () => {
-      setIsOpen((prevIsOpen) => !prevIsOpen);
+    setIsOpen((prevIsOpen) => !prevIsOpen);
   };
-
+ 
   useEffect(() => {
     if (ecoRef.current) {
       if (isOpen) {
@@ -36,7 +36,7 @@ const Ecosystem = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-  
+    
     if (ecoRef.current) {
       const triggerElement = ecoRef.current;
 
@@ -57,6 +57,7 @@ const Ecosystem = () => {
           toggleOptions();
         },
         scrub: true,
+        // markers:true,
       });
     }
 
@@ -75,16 +76,33 @@ const Ecosystem = () => {
         },
         duration: 2,
         ease: "back.out(1.7)",
+        marker:true,
       }
     );
-
+    const title = titleref.current
+    gsap.to(title.children, {
+      y: 0,
+      stagger: 0.05,
+      delay: 0.5,
+      duration: 0.5,
+      ease: "back.out",
+    scrollTrigger: {
+        trigger:title
+      },
+      onComplete: () => {
+      console.log("Ecosystem title came")
+    }
+  });
   }, []);
+  
   
   return (
     <div className='ecosystem'>
-        <h1 className='eco-title col-md-12 m-0 ps-5 py-5'>
-            <h1>OUR ECOSYSTEM</h1>
-            </h1>
+        <span className='eco-title col-md-12 m-0 ps-5 py-5'>
+            <h1 ref={titleref}>{Array.from("ECOSYSTEM").map((letter, index) => (
+                    <div key={index} className="letter">{letter}</div>
+                ))}</h1>
+            </span>
         <div className='eco-content col-md-12 d-flex' ref={ecoRef}>
             <ul className="circle-group">
                 {[1, 2, 3, 4, 5, 6].map((item, index) => (

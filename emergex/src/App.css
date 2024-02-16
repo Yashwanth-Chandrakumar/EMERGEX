@@ -9,9 +9,11 @@
 
 :root {
     --font1: "Poppins";
+    --land-bg: rgba(235, 235, 235, 255);
     --fontSizeIntro: 3vw;
     --text-color: black;
     --bg-color: #fff;
+    --progress1: 0;
 }
 
 @media (max-width: 1000px) {
@@ -38,6 +40,7 @@ body {
 body.dark {
     --text-color: white;
     --bg-color: black;
+    --land-bg: black;
 }
 
 .dark-mode-toggle {

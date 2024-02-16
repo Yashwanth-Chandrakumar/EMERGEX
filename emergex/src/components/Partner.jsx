@@ -10,31 +10,35 @@ import buildbear from '../assets/img/buildbear.svg';
 const Partner = () => {
     gsap.registerPlugin(ScrollTrigger);
     const partnerRef = useRef(null);
-    
-    useEffect(() => {
-        gsap.to(partnerRef.current.children, {
-            y: 0,
-            opacity: 1,
-            duration: 1,
-            ease: "back.out",
-            scrollTrigger: {
-                trigger: partnerRef.current,
-            },
-        });
-    }, []);
+
+        useEffect(() => {
+            const partner = partnerRef.current
+            gsap.to(".partner-letter", {
+                y: 0,
+                stagger: 0.05,
+                delay: 0.5,
+                duration: 0.5,
+                ease: "back.out",
+                onComplete: () => {
+                    console.log("Partners animation")
+                },
+              scrollTrigger: {
+                  trigger: ".partner-letter",
+                //   markers:true,
+                },
+                
+            });
+        }, []);
+
         
 
     return (
-        <div className='partner-container'>
-            <div className='partner-title'>
-                <h1 ref={partnerRef}>
-                    {"Trusted By Partners".split(" ").map((word, wordIndex) => (
-                        <div key={wordIndex} className='word'>
-                            {word.split("").map((char, charIndex) => (
-                                <span key={charIndex} className='partner-title-char'>{char}</span>
-                            ))}
-                            </div>
-                    ))}
+        <div className='partner-container container-fluid d-flex'>
+            <div className='partner-title col-md-5 d-flex align-item-center my-auto'>
+                <h1 className='mx-auto d-flex flex-column partner-title' ref={partnerRef}>
+                {Array.from("PARTNERS").map((letter, index) => (
+                    <div key={index} className="partner-letter">{letter}</div>
+                ))}
                     </h1>
             </div>
             <div className='partner-content'>

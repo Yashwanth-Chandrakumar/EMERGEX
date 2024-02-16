@@ -27,8 +27,8 @@ const DarkModeToggle = () => {
         defaultChecked={isDarkMode}
         onChange={handleToggle}
         icons={{
-          checked: <span role="img" aria-label="Dark Mode">🌜</span>,
-          unchecked: <span role="img" aria-label="Light Mode">🌞</span>,
+          checked: <span role="img" aria-label="Dark Mode"></span>,
+          unchecked: <span role="img" aria-label="Light Mode"></span>,
         }}
         aria-label="Dark mode toggle"
       />

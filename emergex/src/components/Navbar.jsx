@@ -18,60 +18,58 @@ export default function Navbar() {
             duration: 1,
             ease: "back.out",
         });
-        const logoContainer = navbar.querySelector('.nav-logo-container');
-        const distance = 25; // Adjust this value as needed
+        // const logoContainer = navbar.querySelector('.nav-logo-container');
+        // const distance = 25; // Adjust this value as needed
 
-        function handleMouseMove(event) {
-            const mouseX = event.clientX;
-            const mouseY = event.clientY;
+        // function handleMouseMove(event) {
+        //     const mouseX = event.clientX;
+        //     const mouseY = event.clientY;
 
-            const { top, left, width, height } = logoContainer.getBoundingClientRect();
+        //     const { top, left, width, height } = logoContainer.getBoundingClientRect();
 
-            const centerX = left + width / 2;
-            const centerY = top + height / 2;
+        //     const centerX = left + width / 2;
+        //     const centerY = top + height / 2;
 
-            const distanceX = mouseX - centerX;
-            const distanceY = mouseY - centerY;
-            console.log(distanceX,distanceY)
-            if (Math.abs(distanceX) <= distance && Math.abs(distanceY) <= distance) {
-                console.log("logo moving")
-                gsap.to(logoContainer, {
-                    x: distanceX,
-                    y: distanceY,
-                    duration: 0.5,
-                    ease: "power2.out",
-                });
-            }
-        }
+        //     const distanceX = mouseX - centerX;
+        //     const distanceY = mouseY - centerY;
+        //     console.log(distanceX,distanceY)
+        //     if (Math.abs(distanceX) <= distance && Math.abs(distanceY) <= distance) {
+        //         console.log("logo moving")
+        //         gsap.to(logoContainer, {
+        //             x: distanceX,
+        //             y: distanceY,
+        //             duration: 0.5,
+        //             ease: "power2.out",
+        //         });
+        //     }
+        // }
 
-        function handleMouseLeave() {
-            gsap.to(logoContainer, {
-                x: 0,
-                y: 0,
-                duration: 5,
-                ease: "power2.out",
-            });
-        }
+        // function handleMouseLeave() {
+        //     gsap.to(logoContainer, {
+        //         x: 0,
+        //         y: 0,
+        //         duration: 5,
+        //         ease: "power2.out",
+        //     });
+        // }
 
-        logoContainer.addEventListener('mousemove', handleMouseMove);
-        logoContainer.addEventListener('mouseleave', handleMouseLeave);
+        // logoContainer.addEventListener('mousemove', handleMouseMove);
+        // logoContainer.addEventListener('mouseleave', handleMouseLeave);
 
-        return () => {
-            logoContainer.removeEventListener('mousemove', handleMouseMove);
-            logoContainer.removeEventListener('mouseleave', handleMouseLeave);
+        // return () => {
+        //     logoContainer.removeEventListener('mousemove', handleMouseMove);
+        //     logoContainer.removeEventListener('mouseleave', handleMouseLeave);
            
-        };
+        // };
     }, []);
 
     return (
         <div className='navbar' ref={navbarRef} >
-            <div className='nav-logo-container'>
                 <GsapMagnetic>
                     <div className='nav-logo'></div>
                     </GsapMagnetic>
-            </div>
+            
             <div className='nav-side'>
-                <h3>LEARN | CONNECT | DEVELOP</h3>
                 <div className='toggle'>
                 <DarkModeToggle /></div>
                 <ul className='navlist'>

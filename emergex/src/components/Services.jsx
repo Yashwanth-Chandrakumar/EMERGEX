@@ -7,20 +7,21 @@ export default function Services() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to(".service", {
-      x: 0,
-      opacity: 1,
-      duration: 2,
-      ease: "back.out",
-      onComplete: () => {
-        console.log("services animation completed");
-      },
-      scrollTrigger: {
-        trigger: ".service",
-      }
-    });
-  }, []);
-
+      gsap.to(".service", {
+        x: 0,
+        opacity: 1,
+        duration: 2,
+        ease: "back.out",
+        onComplete: () => {
+          console.log("services animation completed");
+        },
+        scrollTrigger: {
+          trigger: ".service",
+          // markers:true
+        }
+      });
+    }, []);
+  }
   return (
     <div className="services">
       <h1>WHAT WE DO</h1>

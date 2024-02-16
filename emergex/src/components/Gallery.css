@@ -52,6 +52,13 @@
     color: white;
 }
 
+.spacer-end {
+    height: 10vh;
+    background-color: black;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
 .spacer h1 {
     margin: 0;
     padding-left: 3.5rem;

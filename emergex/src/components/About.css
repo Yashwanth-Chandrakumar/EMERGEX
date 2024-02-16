@@ -39,6 +39,11 @@
     padding-bottom: 2.5rem;
     color: rgb(206, 203, 203);
     text-align: justify;
+    text-indent: 3rem;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s opacity 1s;
+}
 }
 
 @media screen and (max-width:1024px) {
@@ -83,6 +88,7 @@
         height: 85vh;
         width: 100vw;
     }
+
     .about-title {
         font-size: 3rem;
     }
