@@ -3,6 +3,7 @@ import './Introloader.css';
 import gsap from 'gsap';
 
 export default function Introloader() {
+    
     useEffect(() => {
         var fontTL = gsap.timeline(); // Timeline for font loading animation
         fontTL.to(".intro-loader", 0.1, { fontFamily: "Anton", innerHTML:"Learn" })

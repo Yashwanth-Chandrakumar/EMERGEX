@@ -83,7 +83,7 @@
 //         </div>
 //     );
 // }
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import GsapMagnetic from './GsapMagnetic';
 import DarkModeToggle from "./DarkMode"
@@ -98,9 +98,31 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const [isLandingPage, setIsLandingPage] = useState(true);
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+
+      if (isLandingPage) {
+        if (currentScrollPos > 100) {
+          setIsLandingPage(false);
+          setPrevScrollPos(currentScrollPos);
+        }
+      } else {
+        setVisible(prevScrollPos > currentScrollPos || currentScrollPos === 0);
+        setPrevScrollPos(currentScrollPos);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isLandingPage, prevScrollPos]);
   return (
     <>
-      <nav className="main-nav">
+      <div className="navbar-container" style={{ top: visible ? '0' : '-10rem',  transition: 'top 0.3s' }}>
+      <nav className="main-nav" >
         {/* 1st logo part  */}
         <div className="logo">
         <GsapMagnetic>
@@ -145,7 +167,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-
+      </div>
     </>
   );
 };

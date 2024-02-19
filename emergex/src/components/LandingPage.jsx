@@ -6,7 +6,6 @@ import { isMobile } from 'react-device-detect';
 
 export default function LandingPage() {
     const titleRef = useRef(null);
-
     useEffect(() => {
         const titleElement = titleRef.current;
 
@@ -64,7 +63,6 @@ export default function LandingPage() {
 
     return (
         <div className='mainpage'>
-            <Navbar />
             <div className='landing'>
 
                 <h1 ref={titleRef} className='land-title'>

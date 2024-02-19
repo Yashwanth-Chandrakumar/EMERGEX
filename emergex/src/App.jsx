@@ -11,6 +11,7 @@ import Gallery from './components/Gallery'
 import Exit from './components/Exit'
 import Footer from './components/Footer'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
 function App() {
   
   return (
@@ -24,6 +25,9 @@ function App() {
           </Routes>
         </Router> */}
         <Introloader />
+        <div>
+        <Navbar />
+
         <LandingPage />
         <About />
         <Traction />
@@ -31,7 +35,8 @@ function App() {
         <Ecosystem />
         <Partner />
         <Gallery /> 
-        <Footer/>
+          <Footer />
+          </div>
           {/* <Exit /> */}
         
       </div>

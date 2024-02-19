@@ -9,6 +9,10 @@
     align-items: center;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .landing {
     height: 100%;
     width: 100%;
@@ -56,7 +60,9 @@
 }
 
 @media screen and (min-width: 1300px) {
-    .land-title div, .land-title div:last-child {
+
+    .land-title div,
+    .land-title div:last-child {
         transform: translateY(160px);
     }
 }
@@ -90,7 +96,7 @@
         padding: 0rem 0rem 2rem 0rem;
         margin-top: -0.8rem;
     }
-    
+
 }
 
 @media screen and (max-width:450px) {
@@ -133,5 +139,5 @@
         text-align: left;
         margin-top: -1rem;
     }
-    
+
 }

@@ -30,6 +30,7 @@ main.flex__col {
     background-color: var(--text-color);
     color: var(--bg-color);
     transform-origin: top;
+    z-index: 999;
 }
 
 
