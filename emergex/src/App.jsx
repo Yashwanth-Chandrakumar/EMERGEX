@@ -9,19 +9,29 @@ import Partner from './components/Partner'
 import Ecosystem from './components/Ecosystem'
 import Gallery from './components/Gallery'
 import Exit from './components/Exit'
+import Footer from './components/Footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 function App() {
   
   return (
     <ReactLenis root>
-    <div>
+      <div>
+        <Router>
+          <Routes>
+            <Route path="/" element={<LandingPage />}/>
+            <Route path="/about" element={<About />}/>
+            <Route path="/service" element={<Services />}/>
+          </Routes>
+        </Router>
         <Introloader />
-        <LandingPage />
-        <About />
+        
+        
          <Traction />
-       <Services />
+       
         <Ecosystem />
         <Partner />
         <Gallery /> 
+        <Footer/>
           {/* <Exit /> */}
         
       </div>

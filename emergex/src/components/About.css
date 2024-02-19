@@ -44,7 +44,7 @@
     transform: translateY(100px);
     transition: transform 1s opacity 1s;
 }
-}
+
 
 @media screen and (max-width:1024px) {
     .about-title {

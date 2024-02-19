@@ -1,4 +1,5 @@
-import React, { useRef, useEffect, useLayoutEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
+import { useGSAP } from "@gsap/react"
 import './Traction.css';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -60,23 +61,25 @@ export default function Traction() {
 
   if (!isMobile) {
     console.log("Not a mobile")
-    useLayoutEffect(() => {
+    useGSAP(() => {
+      let panels = gsap.utils.toArray(".panel");
+      let ctx = gsap.context(() => {
         let panels = gsap.utils.toArray(".panel");
-        gsap.to(slider.current, {
-
-          x:() => -(slider.current.clientWidth - component.current.clientWidth),
+        gsap.to(panels, {
+          xPercent: -100 * (panels.length - 1),
           ease: "none",
           scrollTrigger: {
-            id:"Scrolling",
-            trigger: ".pin",
-            pin: ".pin",
-            scrub: true,
-            markers:true,
-            // snap: 1 / (panels.length - 1),
-            end: () => `+=${slider.current.clientWidth - component.current.clientWidth}`,
+            trigger: slider.current,
+            pin: true,
+            scrub: 1,
+            snap: 1 / (panels.length - 1),
+            end: () => "+=" + slider.current.offsetWidth,
+
           }
         });
-    },[]);
+      }, component);
+      return () => ctx.revert();
+    },{scope: component });
   }
 
   return (

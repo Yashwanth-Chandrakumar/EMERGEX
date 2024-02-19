@@ -1,6 +1,9 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import './Gallery.css'; // Import the CSS file
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from '@studio-freight/lenis';
 import { useTransform, useScroll, motion } from 'framer-motion';
 import img1 from '../assets/img/IMG-20221204-WA0006.webp'
@@ -65,11 +68,29 @@ function Home() {
       window.removeEventListener("resize", resize);
     };
   }, []);
-
+  const galleryCont = useRef(null)
+  const galleryRef = useRef(null)
+  gsap.registerPlugin(ScrollTrigger)
+  useGSAP(() => {
+    const title = galleryRef.current
+    gsap.to(title.children, {
+      y: 0,
+      stagger: 0.05,
+      duration: 0.5,
+      ease: "back.out",
+      scrollTrigger: {
+        trigger:title
+      }
+    })
+  },{scope:galleryCont})
   return (
-    <main className="main">
+    <main className="main" ref={galleryCont}>
       <div className="spacer">
-        <h1>LIFE WITH US.</h1>
+        <h1 className='gallery-title' ref={galleryRef}>
+        {Array.from("LIFE WITH US").map((letter, index) => (
+    <div key={index} className="letter" style={{ whiteSpace: 'pre' }}>{letter}</div>
+))}
+        </h1>
       </div>
       <div ref={gallery} className="gallery">
         <Column images={[images[0], images[1], images[2]]} y={y} />
@@ -90,11 +111,7 @@ const Column = ({ images, y }) => {
     >
       {images.map((src, i) => (
         <div key={i} className="imageContainer" style={{backgroundImage:`url(${src})`}}>
-          {/* <img
-            src={`${src}`}
-            alt='image'
-            fill
-          /> */}
+          
         </div>
       ))}
     </motion.div>

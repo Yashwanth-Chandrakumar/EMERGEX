@@ -64,6 +64,14 @@
     padding-left: 3.5rem;
     font-size: 7rem;
     padding-top: 6rem;
+    display: flex;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+}
+
+.spacer h1 div {
+    transform: translateY(140px);
+    transition: transform .5s;
 }
 
 @media screen and (max-width:800px) {
