@@ -22,7 +22,7 @@ export default function About() {
     gsap.to(".about-description", {
       y: 0,
       opacity: 1,
-      delay:1,
+      delay:0.5,
       duration: 1,
       ease: "back.out",
       scrollTrigger: {

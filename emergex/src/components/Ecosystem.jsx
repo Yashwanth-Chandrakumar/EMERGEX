@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef} from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+import { useGSAP } from '@gsap/react';
 import './Ecosystem.css';
 
 const Ecosystem = () => {
@@ -34,7 +34,8 @@ const Ecosystem = () => {
     }
   }, [isOpen]);
 
-  useEffect(() => {
+  const ecoContainer = useRef(null)
+  useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
     
     if (ecoRef.current) {
@@ -93,11 +94,10 @@ const Ecosystem = () => {
       console.log("Ecosystem title came")
     }
   });
-  }, []);
-  
+  },{scope:ecoContainer} )
   
   return (
-    <div className='ecosystem'>
+    <div className='ecosystem' ref={ecoContainer}>
         <span className='eco-title col-md-12 m-0 ps-5 py-5'>
             <h1 ref={titleref}>{Array.from("ECOSYSTEM").map((letter, index) => (
                     <div key={index} className="letter">{letter}</div>
