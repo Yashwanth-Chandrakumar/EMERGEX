@@ -16,18 +16,18 @@ function App() {
   return (
     <ReactLenis root>
       <div>
-        <Router>
+        {/* <Router>
           <Routes>
             <Route path="/" element={<LandingPage />}/>
             <Route path="/about" element={<About />}/>
             <Route path="/service" element={<Services />}/>
           </Routes>
-        </Router>
+        </Router> */}
         <Introloader />
-        
-        
-         <Traction />
-       
+        <LandingPage />
+        <About />
+        <Traction />
+        <Services/>
         <Ecosystem />
         <Partner />
         <Gallery /> 

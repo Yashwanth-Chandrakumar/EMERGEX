@@ -31,7 +31,7 @@ export default function About() {
   });
 }, []);
   return (
-    <div className='about' >
+    <div className='about' id='about' >
       <div className='about-title-container'>
       <h1 ref={aboutRef} className='about-title'>
                 {Array.from("About").map((letter, index) => (

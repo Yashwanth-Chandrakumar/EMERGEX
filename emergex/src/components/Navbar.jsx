@@ -115,19 +115,19 @@ const Navbar = () => {
           }>
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <NavLink to="/about">about</NavLink>
+              <a href="#about">about</a>
             </li>
             <li>
-              <NavLink to="/service">services</NavLink>
+              <a href="#services">services</a>
             </li>
             <li>
-              <NavLink to="/service">ecosystem</NavLink>
+              <a href="#ecosystem">ecosystem</a>
             </li>
             <li>
-              <NavLink to="/contact">contact</NavLink>
+              <a href="#contact">contact</a>
             </li>
             <li>
               <DarkModeToggle/>
