@@ -8,15 +8,7 @@
 //     const navbarRef = useRef(null);
 
 //     useEffect(() => {
-//         const navbar = navbarRef.current;
-
-//         gsap.to(navbar, {
-//             y: 0,
-//             opacity:1,
-//             delay: 4,
-//             duration: 1,
-//             ease: "back.out",
-//         });
+//         
 //         // const logoContainer = navbar.querySelector('.nav-logo-container');
 //         // const distance = 25; // Adjust this value as needed
 
@@ -83,10 +75,12 @@
 //         </div>
 //     );
 // }
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./Navbar.css";
 import GsapMagnetic from './GsapMagnetic';
 import DarkModeToggle from "./DarkMode"
+import gsap from 'gsap'
+import {useGSAP} from "@gsap/react"
 import {
   FaFacebookSquare,
   FaInstagramSquare,
@@ -101,6 +95,18 @@ const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
   const [isLandingPage, setIsLandingPage] = useState(true);
+  const navbarRef=useRef(null)
+  useGSAP(() => {
+    const navbar = navbarRef.current;
+
+        gsap.to(navbar, {
+            y: 0,
+            opacity:1,
+            delay: 5,
+            duration: 1,
+            ease: "back.out",
+        });
+  },{scope:navbarRef})
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
@@ -121,7 +127,7 @@ const Navbar = () => {
   }, [isLandingPage, prevScrollPos]);
   return (
     <>
-      <div className="navbar-container" style={{ top: visible ? '0' : '-10rem',  transition: 'top 0.3s' }}>
+      <div ref={navbarRef} className="navbar-container" style={{ top: visible ? '0' : '-10rem',  transition: 'top 0.3s' }}>
       <nav className="main-nav" >
         {/* 1st logo part  */}
         <div className="logo">
