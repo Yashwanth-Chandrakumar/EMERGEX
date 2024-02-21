@@ -12,6 +12,7 @@ import Exit from './components/Exit'
 import Footer from './components/Footer'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import Objectives from './components/Objectives'
 function App() {
   
   return (
@@ -33,7 +34,8 @@ function App() {
         <Traction />
         <Services/>
         <Ecosystem />
-        <Partner />
+          <Partner />
+          <Objectives/>
         <Gallery /> 
           <Footer />
           </div>

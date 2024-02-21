@@ -8,75 +8,115 @@
     display: block;
     height: 100%;
     width: 100%;
-    background-color: #ececec9e;
+    background-color: var(--land-bg);
     color: var(--text-color);
+    display: flex;
 }
 
 .footer__text p {
     margin: 0;
     font-size: 36px;
     font-weight: 600;
-    padding: 3rem 0rem 0rem 6rem;
+    padding: 5rem 0rem 0rem 0rem;
 }
 
-.footer__content {
+
+.footer-left {
+    width: 50%;
+    padding-left: 3.5rem;
+}
+
+.footer-right {
+    width: 50%;
+}
+
+.footer-img {
+    height: 50%;
+}
+
+.footer-navigation {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding-top: 3rem;
 }
 
 .footer__nav {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    margin-top: 2rem;
+    width: 50%;
 }
 
 .footer__nav ul {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .footer__social {
-    flex: 1;
-    margin-top: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.footer__social p {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.footer__social ul {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
 }
 
 .footer__contact {
     flex: 3;
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.footer__contact h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
 }
 
 .footer__contact form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     height: 100%;
     width: 100%;
 }
 
+
 .footer__contact form * {
     padding: 1rem;
     margin: 1rem 0;
-    border: none;
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
 
 .footer__contact form input {
-    width: 40%;
+    width: 80%;
     height: 0.7rem;
-    background-color: rgb(80, 80, 80);
-    color: var(--bg-color);
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--text-color);
+    color: var(--text-color);
 }
 
-.footer__contact form textarea {
+.footer__contact form input:focus {
+    background-color: transparent;
+    outline: none;
+    /* Remove outline when input is focused */
+}
+
+/* .footer__contact form textarea {
     width: 40%;
     height: 2rem;
     background-color: rgb(80, 80, 80);
     color: var(--bg-color);
-}
+} */
 
 .footer__contact form button {
     width: 6.5rem;
@@ -85,13 +125,13 @@
     color: var(--text-color);
     font-weight: 600;
     cursor: pointer;
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .footer__contact form input::placeholder,
 .footer__contact form textarea::placeholder {
-    color: var(--bg-color); 
-    opacity: 0.5; 
+    color: var(--text-color);
+    opacity: 0.5;
 }

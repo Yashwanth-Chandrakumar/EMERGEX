@@ -1,8 +1,12 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-
+import InstagramIcon from '@mui/icons-material/Instagram';
+import XIcon from '@mui/icons-material/X';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import './Footer.css';
+import { Link } from '@mui/material';
 
 const Footer = () => {
 
@@ -30,12 +34,34 @@ const Footer = () => {
         
         <footer className='footer'>
             <section className='footer-container'>
-            <div className='footer__text'>
+                      <div className='footer-left'>
+                         
+                <div className='footer__contact'>
+                    <h1>
+                        Join us today
+                        </h1>
+                    <form>
+                        <input type='email' placeholder='Your Email' />
+                        {/* <textarea placeholder='Your Message...' /> */}
+                        {/* <button type='submit'>
+                            Send
+                            </button> */}
+                        </form>
+                          </div>
+                          <div className='footer__text'>
                 <p>
                     Emerge<span className='gradient-text'>X</span>
                     </p>
                 </div>
-            <div className='footer__content'>
+                      </div>
+
+
+
+                  <div className='footer-right'>
+                      <div className='footer-img'>
+                          Image comes here
+                      </div>
+                      <div className='footer-navigation'>
                 <div className='footer__nav'>
                     <ul>
                         <li><a href="">Home</a></li>
@@ -45,27 +71,18 @@ const Footer = () => {
                         <li><a href="">Ecosystem</a></li>
                         </ul>
                     </div>
-                <div className='footer__social'>
+                          <div className='footer__social'>
+                              <p>Let's Chat!</p>
+                              <p>name@mail.com</p>
                     <ul>
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Twitter</a></li>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">LinkedIn</a></li>
+                        <li><a href=""><FacebookIcon/></a></li>
+                        <li><a href=""><XIcon/></a></li>
+                        <li><a href=""><InstagramIcon/>  </a></li>
+                        <li><a href=""><LinkedInIcon/></a></li>
                         </ul>
-                    </div>
-                <div className='footer__contact'>
-                    <h2>
-                        Contact Us
-                        </h2>
-                    <form>
-                        <input type='text' placeholder='Name' />
-                        <textarea placeholder='Your Message...' />
-                        <button type='submit'>
-                            Send
-                            </button>
-                        </form>
-                    </div>
-                </div>
+                          </div>
+                      </div>
+                      </div>
                 </section>
             </footer>
         </div>

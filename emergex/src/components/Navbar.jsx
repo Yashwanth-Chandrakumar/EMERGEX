@@ -103,7 +103,7 @@ const Navbar = () => {
             y: 0,
             opacity:1,
             delay: 5,
-            duration: 1,
+            duration: 2,
             ease: "back.out",
         });
   },{scope:navbarRef})

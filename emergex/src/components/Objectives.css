@@ -1,0 +1,70 @@
+.objectives-container {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+
+.objectives-container h1 {
+    padding-left: 3.5rem;
+    font-size: 7rem;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    text-transform: uppercase;
+    color: rgb(206, 203, 203);
+}
+
+.obj-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.obj-card {
+    width: 25%;
+    background-color: #2a2a39;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+    transform: rotate3d(0);
+}
+
+.obj-card:hover {
+    transition-duration: 150ms;
+    box-shadow: 0 5px 20px 5px #00000044;
+}
+
+.obj-card .glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+    background-image: radial-gradient(circle at 50% -20%, #b5b5b522, #0000000f);
+}
+
+.obj-card img {
+    height: 200px;
+    width: 200px;
+    border: none;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.obj-content {
+    padding: 2rem;
+    padding-top: 0;
+    color: white;
+}
+
+.obj-content p {
+    color: #9ca2ba;
+}
