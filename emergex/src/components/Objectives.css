@@ -10,8 +10,15 @@
     font-weight: bold;
     margin: 0;
     display: flex;
+    padding-bottom: 2rem;
     text-transform: uppercase;
     color: rgb(206, 203, 203);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.objectives-container h1 div {
+    transform: translateY(140px);
+    transition: transform .5s;
 }
 
 .obj-wrapper {

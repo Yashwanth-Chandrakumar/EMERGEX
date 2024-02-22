@@ -3,6 +3,10 @@ import "./Objectives.css";
 import learn from "../assets/img/5437683.png"
 import connect from "../assets/img/2929907.png"
 import grow from "../assets/img/6736639.png"
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import {useGSAP} from '@gsap/react'
+gsap.registerPlugin(ScrollTrigger)
 export default function Objectives() {
   const cardRefs = [useRef(null), useRef(null), useRef(null)]; // Create an array of refs for each card
 
@@ -48,10 +52,41 @@ export default function Objectives() {
     cardRefs[index].current.style.transform = '';
     cardRefs[index].current.style.background = '';
   }
-
+  const objContainer = useRef(null)
+  const objRef = useRef(null)
+  useGSAP(() => {
+    const obj = objRef.current
+    gsap.to(obj.children, {
+        y: 0,
+        stagger: 0.05,
+        duration: 0.5,
+      ease: "back.out",
+      scrollTrigger: {
+          trigger:obj
+        }
+    });
+    gsap.fromTo(".obj-card", {
+      x: -150,
+      opacity:0,
+    },{
+      x: 0,
+      stagger: 0.5,
+      duration: 0.5,
+      delay:1,
+      opacity: 1,
+      ease: "back.in",
+      scrollTrigger: {
+        trigger:".obj-wrapper"
+      }
+    })
+  },{scope:objContainer})
   return (
-    <div className='objectives-container'>
-      <h1>OBJECTIVES</h1>
+    <div className='objectives-container' ref={objContainer}>
+      <h1 ref={objRef}>
+      {Array.from("OBJECTIVES").map((letter, index) => (
+                    <div key={index} className="letter">{letter}</div>
+                ))}
+      </h1>
 
       <div className='obj-wrapper'>
         <div className='obj-card' ref={cardRefs[0]} onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={() => handleMouseLeave(0)}>
