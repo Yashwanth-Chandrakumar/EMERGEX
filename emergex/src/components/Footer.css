@@ -8,12 +8,12 @@
     display: block;
     height: 100%;
     width: 100%;
-    background-color: var(--land-bg);
+    background-color: var(--bg-color);
     color: var(--text-color);
     display: flex;
 }
 
-.footer__text p {
+.footer__text h1 {
     margin: 0;
     font-size: 36px;
     font-weight: 600;
@@ -31,13 +31,22 @@
 }
 
 .footer-img {
-    height: 50%;
+    height: 65%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer-img img {
+    height: 80%;
+    position: absolute;
 }
 
 .footer-navigation {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
 }
 
 .footer__nav {
@@ -45,10 +54,14 @@
 }
 
 .footer__nav ul {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto;
     width: 50%;
+    line-height: 3rem;
+    column-gap: 30%;
+    margin-top: -0.5rem;
 }
+
 
 .footer__social {
     width: 50%;
@@ -83,15 +96,18 @@
 
 .footer__contact form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     height: 100%;
-    width: 100%;
+    width: 80%;
+    border-bottom: 1px solid var(--text-color);
 }
 
 
-.footer__contact form * {
+.footer__contact form input {
     padding: 1rem;
-    margin: 1rem 0;
+    margin-bottom: 0;
+    margin-top: 1rem;
     /* border-radius: 50px; */
 }
 
@@ -101,8 +117,15 @@
     background-color: transparent;
     border: none;
     font-size: 1rem;
-    border-bottom: 1px solid var(--text-color);
+    /* border-bottom: 1px solid var(--text-color); */
     color: var(--text-color);
+}
+
+.footer-send {
+    border: none;
+    background-color: transparent;
+    margin-bottom: -1rem;
+    cursor: pointer;
 }
 
 .footer__contact form input:focus {
@@ -118,7 +141,7 @@
     color: var(--bg-color);
 } */
 
-.footer__contact form button {
+/* .footer__contact form button {
     width: 6.5rem;
     height: 0.7rem;
     background: linear-gradient(333deg, rgba(113, 231, 122, 1) 21%, rgba(2, 106, 252, 1) 150%);
@@ -128,7 +151,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .footer__contact form input::placeholder,
 .footer__contact form textarea::placeholder {

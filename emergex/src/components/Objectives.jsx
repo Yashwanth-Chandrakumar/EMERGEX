@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import "./Objectives.css";
-
+import learn from "../assets/img/5437683.png"
+import connect from "../assets/img/2929907.png"
+import grow from "../assets/img/6736639.png"
 export default function Objectives() {
   const cardRefs = [useRef(null), useRef(null), useRef(null)]; // Create an array of refs for each card
 
@@ -53,15 +55,15 @@ export default function Objectives() {
 
       <div className='obj-wrapper'>
         <div className='obj-card' ref={cardRefs[0]} onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={() => handleMouseLeave(0)}>
-          <img />
+          <img src={ learn} />
           <div className='obj-content'>
             <h3>Culture of Learning</h3>
-            <p>Create a culture of growth and learning with creative ideas and boost the same by organising hackathons, meetups and other events also branding EmergeX</p>
+            <p>Create a culture of growth and learning with creative ideas and boost the same by organising hackathons and other events also branding EmergeX</p>
             <div className="glow" />
           </div>
         </div>
         <div className='obj-card' ref={cardRefs[1]} onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave(1)}>
-          <img />
+          <img src={ connect} />
           <div className='obj-content'>
             <h3>Connect with Industry</h3>
             <p>Access to community management training, mentorship and technical knowledge from industry experts while fostering valuable connections.</p>
@@ -69,7 +71,7 @@ export default function Objectives() {
           </div>
         </div>
         <div className='obj-card' ref={cardRefs[2]} onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={() => handleMouseLeave(2)}>
-          <img />
+          <img src={ grow} />
           <div className='obj-content'>
             <h3>Grow in the ecosystem</h3>
             <p>Discover unparalleled job opportunities and entrepreneurial paths, while also gaining significant recognition and establishing your </p>

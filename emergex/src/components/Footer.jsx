@@ -4,12 +4,16 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import SendIcon from '@mui/icons-material/Send';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import './Footer.css';
+import footimg from "../assets/img/3974104.png"
 import { Link } from '@mui/material';
 
 const Footer = () => {
-
+    function contact(e) {
+        e.preventDefault()
+    }
   useEffect(() => {
         gsap.set('section.footer-container', { yPercent: -50 })
 
@@ -41,7 +45,8 @@ const Footer = () => {
                         Join us today
                         </h1>
                     <form>
-                        <input type='email' placeholder='Your Email' />
+                              <input type='email' placeholder='Your Email' />
+                              <button className='footer-send' onClick={contact}><SendIcon /></button>
                         {/* <textarea placeholder='Your Message...' /> */}
                         {/* <button type='submit'>
                             Send
@@ -49,9 +54,10 @@ const Footer = () => {
                         </form>
                           </div>
                           <div className='footer__text'>
-                <p>
+                <h1>
                     Emerge<span className='gradient-text'>X</span>
-                    </p>
+                          </h1>
+                          <p>Your one stop solution for all emerging technologies.</p>
                 </div>
                       </div>
 
@@ -59,7 +65,7 @@ const Footer = () => {
 
                   <div className='footer-right'>
                       <div className='footer-img'>
-                          Image comes here
+                          <img src={footimg}/>
                       </div>
                       <div className='footer-navigation'>
                 <div className='footer__nav'>
@@ -69,6 +75,7 @@ const Footer = () => {
                         <li><a href="">Traction</a></li>
                         <li><a href="">Services</a></li>
                         <li><a href="">Ecosystem</a></li>
+                        <li><a href="">Partners</a></li>
                         </ul>
                     </div>
                           <div className='footer__social'>

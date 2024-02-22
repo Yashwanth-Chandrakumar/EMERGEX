@@ -34,11 +34,14 @@
     transition-property: transform, box-shadow;
     transition-timing-function: ease-out;
     transform: rotate3d(0);
+    /* -webkit-box-shadow: 0px 5px 11px 0px rgba(255, 255, 255, 0.53);
+    -moz-box-shadow: 0px 5px 11px 0px rgba(255, 255, 255, 0.53);
+    box-shadow: 0px 5px 11px 0px rgba(255, 255, 255, 0.53); */
 }
 
 .obj-card:hover {
     transition-duration: 150ms;
-    box-shadow: 0 5px 20px 5px #00000044;
+    box-shadow: 0 5px 20px 5px #ffffff44;
 }
 
 .obj-card .glow {
@@ -52,10 +55,11 @@
 }
 
 .obj-card img {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border: none;
     padding: 2rem;
+    padding-bottom: 0;
     border-radius: 8px;
 }
 
