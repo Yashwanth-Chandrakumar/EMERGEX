@@ -44,26 +44,26 @@ const Partner = () => {
     
 
     return (
-        <div className='partner-container container-fluid d-flex' ref={partnerContainer}>
-            <div className='partner-title col-md-5 d-flex align-item-center my-auto'>
-                <h1 className='mx-auto d-flex flex-column' ref={partnerRef}>
+        <div className='partner-container' ref={partnerContainer}>
+            <div className='partner-title'>
+                <h1 ref={partnerRef}>
                     {Array.from("PARTNERS").map((letter, index) => (
                         <div key={index} className="partner-letter">{letter}</div>
                     ))}
                 </h1>
             </div>
-            <div className='partner-content col-md-7 d-flex my-auto' >
+            <div className='partner-content' >
                 <span className='partner-logo'>
                     <img src={pushImg} alt='push-protocol' />
-                    <p className='partner-text mt-5'>Push Protocol</p>
+                    <p className='partner-text'>Push Protocol</p>
                 </span>
                 <span className='partner-logo'>
                     <img src={shardeumImg} alt='shardeum' />
-                    <p className='partner-text mt-5'>Shardeum</p>
+                    <p className='partner-text'>Shardeum</p>
                 </span>
                 <span className='partner-logo'>
                     <img src={buildbearImg} alt="build bear" />
-                    <p className='partner-text mt-5'>Build Bear</p>
+                    <p className='partner-text'>Build Bear</p>
                 </span>
             </div>
         </div>
