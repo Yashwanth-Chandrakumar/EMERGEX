@@ -29,8 +29,9 @@ const Partner = () => {
         });
         gsap.to(".partner-logo", {
             y: 0,
-            stagger: 0.05,
-            delay: 0.5,
+            opacity:1,
+            stagger: 0.5,
+            delay: 1,
             duration: 1,
             ease: "back.out",
             scrollTrigger: {

@@ -184,7 +184,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); */
 }
 
 .partner-content img {
@@ -206,7 +206,7 @@
 .partner-logo {
     transform: translateY(200px);
     padding: 5rem;
-
+    opacity: 0;
 }
 
 /* .partner-title h1 .char{

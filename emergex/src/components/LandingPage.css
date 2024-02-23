@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--land-bg);
+    background-color: var(--bg-color);
 }
 
 .land-title {
