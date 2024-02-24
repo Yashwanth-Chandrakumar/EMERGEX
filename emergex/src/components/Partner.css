@@ -154,7 +154,8 @@
 .partner-container {
     background-color: black;
     color: white;
-    height: 100vh;
+    height: auto;
+    padding-bottom: 1rem;
     width: 100%;
     display: flex;
     align-items: center;

@@ -87,7 +87,7 @@ export default function Objectives() {
                     <div key={index} className="letter">{letter}</div>
                 ))}
       </h1>
-      <p>EmergeX Hub, an extension of EmergeX, offers students the chance to become EmergeX Comrades, promoting Web3 awareness through events and workshops, and fostering tech communities in educational institutions.</p>
+      <p><span>EmergeX Hub</span>, an extension of EmergeX, offers students the chance to become <span>EmergeX Comrades</span>, promoting Web3 awareness through events and workshops, and fostering tech communities in educational institutions.</p>
 
       <div className='obj-wrapper'>
         <div className='obj-card' ref={cardRefs[0]} onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={() => handleMouseLeave(0)}>

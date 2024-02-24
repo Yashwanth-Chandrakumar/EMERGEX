@@ -1,5 +1,6 @@
 .services {
-    height: 150vh;
+    height: auto;
+    padding-bottom: 1rem;
     width: 100%;
     background-color: black;
     margin: 0;

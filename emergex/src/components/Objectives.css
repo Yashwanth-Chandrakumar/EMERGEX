@@ -1,7 +1,8 @@
 .objectives-container {
     background-color: black;
-    height: 100vh;
+    height: auto;
     width: 100%;
+    padding-bottom: 1rem;
 }
 
 .objectives-container h1 {
@@ -10,7 +11,7 @@
     font-weight: bold;
     margin: 0;
     display: flex;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
     text-transform: uppercase;
     color: rgb(206, 203, 203);
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -80,6 +81,15 @@
     color: #9ca2ba;
 }
 
-.objectives-container p {
+.objectives-container>p {
     color: #9ca2ba;
+    padding-left: 4rem;
+    text-indent: 4rem;
+    font-size: 1.3rem;
+    /* margin-top: 0; */
+}
+
+.objectives-container>p>span {
+    color: white;
+    font-weight: bold;
 }
