@@ -155,6 +155,9 @@ const Navbar = () => {
               <a href="#ecosystem">ecosystem</a>
             </li>
             <li>
+              <a href="#ecosystem">emergex hub</a>
+            </li>
+            <li>
               <a href="#contact">contact</a>
             </li>
             <li>
