@@ -104,7 +104,7 @@
     .partner-title {
         justify-content: center;
     }
-    
+
     .partner-title h1 {
         flex-direction: row !important;
         font-size: 4rem;
@@ -152,3 +152,4 @@
     .partner-text {
         font-size: 0.8rem;
     }
+}
