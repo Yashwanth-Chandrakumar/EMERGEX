@@ -7,6 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import SendIcon from '@mui/icons-material/Send';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import './Footer.css';
+import LanguageIcon from '@mui/icons-material/Language';
 import footimg from "../assets/img/3974104.png"
 import { Link } from '@mui/material';
 
@@ -80,12 +81,14 @@ const Footer = () => {
                     </div>
                           <div className='footer__social'>
                               <p>Let's Chat!</p>
-                              <p>name@mail.com</p>
+                              <p>emergexofficial@gmail.com</p>
                     <ul>
                         <li><a href=""><FacebookIcon/></a></li>
                         <li><a href=""><XIcon/></a></li>
                         <li><a href=""><InstagramIcon/>  </a></li>
-                        <li><a href=""><LinkedInIcon/></a></li>
+                        <li><a href=""><LinkedInIcon /></a></li>
+                        <li><a href="https://linktr.ee/emergexofficial" target="_blank"><LanguageIcon /></a></li>
+                                  
                         </ul>
                           </div>
                       </div>
