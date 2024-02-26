@@ -83,10 +83,10 @@ const Footer = () => {
                               <p>Let's Chat!</p>
                               <p>emergexofficial@gmail.com</p>
                     <ul>
-                        <li><a href=""><FacebookIcon/></a></li>
-                        <li><a href=""><XIcon/></a></li>
-                        <li><a href=""><InstagramIcon/>  </a></li>
-                        <li><a href=""><LinkedInIcon /></a></li>
+                        {/* <li><a href=""><FacebookIcon/></a></li> */}
+                        <li><a href="https://twitter.com/EmergeXOfficial" target='_blank'><XIcon/></a></li>
+                        <li><a href="https://www.instagram.com/emergexofficial/" target='_blank'><InstagramIcon/>  </a></li>
+                        {/* <li><a href=""><LinkedInIcon /></a></li> */}
                         <li><a href="https://linktr.ee/emergexofficial" target="_blank"><LanguageIcon /></a></li>
                                   
                         </ul>
