@@ -1,7 +1,7 @@
 .partner-container {
     background-color: black;
     color: white;
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     align-items: center;
@@ -58,7 +58,7 @@
 
 @media screen and (max-width:1024px) {
     .partner-container {
-        height: 80vh;
+        height: auto;
     }
 
     .partner-title h1 {
@@ -77,7 +77,11 @@
 
 @media screen and (max-width:768px) {
     .partner-container {
-        height: 70vh;
+        height: auto;
+    }
+
+    .partner-title {
+        padding-left: 2rem;
     }
 
     .partner-title h1 {
@@ -98,7 +102,7 @@
 @media screen and (max-width:480px) {
     .partner-container {
         flex-direction: column;
-        height: 60vh;
+        height: auto;
     }
 
     .partner-title {
@@ -107,7 +111,7 @@
 
     .partner-title h1 {
         flex-direction: row !important;
-        font-size: 4rem;
+        font-size: 2.5rem;
         margin-bottom: 1rem;
     }
 
@@ -136,7 +140,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 380px) {
     .partner-container {
-        height: 80vh;
+        height: auto;
         justify-content: center;
     }
 

@@ -102,12 +102,12 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width:450px) {
     .mainpage {
-        height: 100vh;
+        height: 50vh;
     }
 
     .landing {
-        align-items: start;
-        margin-left: 2rem;
+        /* align-items: start; */
+        /* margin-left: 2rem; */
     }
 
     .land-title {
@@ -123,7 +123,7 @@ body::-webkit-scrollbar {
     .landing-description {
         font-size: 1rem;
         width: 80%;
-        text-align: left;
+        text-align: center;
         margin-top: -1rem;
         line-height: 1.3rem;
     }

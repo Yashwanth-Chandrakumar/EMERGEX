@@ -9,6 +9,10 @@
     overflow: hidden;
 }
 
+.main {
+    overflow: hidden;
+}
+
 .column {
     position: relative;
     height: 100%;
@@ -19,7 +23,29 @@
     gap: 2vw;
 }
 
+.row {
+    position: relative;
+    height: 25%;
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    overflow: hidden;
+}
+
 .column .imageContainer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.row .imageContainer {
     height: 100%;
     width: 100%;
     position: relative;
@@ -44,6 +70,22 @@
 
 .column:nth-of-type(4) {
     top: -75%;
+}
+
+.row:nth-of-type(1) {
+    left: -45%;
+}
+
+.row:nth-of-type(2) {
+    left: -95%;
+}
+
+.row:nth-of-type(3) {
+    left: -45%;
+}
+
+.row:nth-of-type(4) {
+    left: -75%;
 }
 
 .spacer {
@@ -76,11 +118,19 @@
 
 @media screen and (max-width:800px) {
     .spacer {
-        height: 30vh;
+        height: 20vh;
     }
 
     .spacer h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         padding-left: 2rem;
+    }
+
+    .gallery {
+        flex-direction: column;
+        /* height: auto; */
+        /* height: 100vh; */
+        width: 175vw;
+        overflow-x: hidden;
     }
 }

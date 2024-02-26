@@ -64,6 +64,7 @@
         flex-direction: column;
         gap: 25vh;
         height: 80vh;
+        width: 100%;
     }
 
     .about-title {
@@ -72,11 +73,11 @@
     }
 
     .about-container {
-        width: 88%;
+        width: 100%;
     }
 
     .about-description {
-        padding: 1rem 2rem 1rem 0rem;
+        padding: 1rem 2rem 1rem 2rem;
         font-size: 1.1rem;
         text-align: justify;
         text-indent: 3rem;
@@ -86,8 +87,8 @@
 
 @media screen and (max-width:500px) {
     .about {
-        height: 85vh;
-        width: 100vw;
+        height: auto;
+        width: 100%;
     }
 
     .about-title {
@@ -102,7 +103,7 @@
 @media screen and (min-width:300px) and (max-width:400px) {
     .about {
         height: 85vh;
-        width: 100vw;
+        width: 100%;
     }
 
     .about-title {

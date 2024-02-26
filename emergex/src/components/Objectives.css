@@ -93,3 +93,30 @@
     color: white;
     font-weight: bold;
 }
+
+@media screen and (max-width:800px) {
+    .objectives-container {
+        padding-top: 2rem;
+        margin: -1px;
+    }
+
+    .objectives-container h1 {
+
+        font-size: 2.5rem;
+        padding-left: 2rem;
+    }
+
+    .objectives-container>p {
+        padding-left: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .obj-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .obj-card {
+        width: 90%;
+    }
+}
