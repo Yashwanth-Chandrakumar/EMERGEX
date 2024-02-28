@@ -1,0 +1,27 @@
+#page #main {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+
+#page #section {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+
+}
+
+#page #section:not(:first-child) {
+    top: 100%;
+}
+
+#page h1,
+h2 {
+    font-size: 18vw;
+    line-height: .8;
+}

@@ -1,12 +1,12 @@
 .footer {
     overflow: hidden;
-    height: 70vh;
+    height: auto;
     width: 100%;
+    margin-top: 4rem;
 }
 
 .footer-container {
-    display: block;
-    height: 100%;
+    height: auto;
     width: 100%;
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -157,4 +157,62 @@
 .footer__contact form textarea::placeholder {
     color: var(--text-color);
     opacity: 0.5;
+}
+
+@media screen and (max-width:800px) {
+    .footer-img {
+        display: none;
+
+    }
+
+    .footer-container {
+        flex-direction: column;
+        height: auto;
+        gap: 3rem;
+    }
+
+    .footer-left {
+        width: 100%;
+        padding-left: 1rem;
+    }
+
+    .footer-right {
+        width: 100%;
+
+    }
+
+    .footer-navigation {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer__nav {
+        width: 100%;
+    }
+
+    .footer__nav ul {
+        width: 100%;
+
+    }
+
+    .footer__nav ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer__social {
+        width: 100%;
+        padding-left: 1rem;
+    }
+
+    .footer__social ul {
+        width: 90%;
+    }
+
+    .footer__contact h1 {
+        font-size: 2.5rem;
+        margin-top: 0;
+    }
 }

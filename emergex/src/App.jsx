@@ -13,6 +13,7 @@ import Footer from './components/Footer'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Objectives from './components/Objectives'
+import Comrade from './components/Comrade'
 function App() {
   
   return (
@@ -35,7 +36,8 @@ function App() {
         <Services/>
         <Ecosystem />
           <Partner />
-          <Objectives/>
+          <Objectives />
+          <Comrade/>
         <Gallery /> 
           <Footer />
           </div>

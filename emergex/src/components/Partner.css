@@ -65,6 +65,10 @@
         font-size: 6rem;
     }
 
+    .partner-content {
+        flex-direction: column;
+    }
+
     .partner-content img {
         height: 100px;
         margin: 0px 30px;
@@ -91,6 +95,7 @@
     .partner-content img {
         height: 65px;
         margin: 0px 20px;
+
     }
 
     .partner-text {

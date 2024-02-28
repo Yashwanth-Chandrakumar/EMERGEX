@@ -14,6 +14,8 @@ import { Link } from '@mui/material';
 const Footer = () => {
     function contact(e) {
         e.preventDefault()
+        window.location.href = `mailto:emergexofficial@gmail.com`;
+        
     }
   useEffect(() => {
         gsap.set('section.footer-container', { yPercent: -50 })

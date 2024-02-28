@@ -34,8 +34,6 @@ body {
     font-family: var(--font1);
     color: var(--text-color);
     background-color: var(--bg-color);
-    overflow-x: hidden;
-    overflow: hidden;
 }
 
 body.dark {
