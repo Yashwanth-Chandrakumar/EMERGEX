@@ -7,13 +7,20 @@ Source: https://sketchfab.com/3d-models/airports-around-the-world-e58f56a352b540
 Title: Airports around the world
 */
 
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { useGLTF } from '@react-three/drei'
-
+import { useFrame } from '@react-three/fiber';
 export default function Model(props) {
   const { nodes, materials } = useGLTF('/scene.gltf')
+  const scale = 15;
+  const group = useRef();
+  const [rotationSpeed] = useState(0.005);
+
+  useFrame(() => {
+    group.current.rotation.y += rotationSpeed; // Update rotation on each frame
+  });
   return (
-    <group {...props} dispose={null}>
+    <group ref={group} {...props} dispose={null}  scale={[scale,scale,scale]}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.167}>
         <mesh geometry={nodes.Object_2.geometry} material={materials.matairport_material} />
         <mesh geometry={nodes.Object_3.geometry} material={materials.matairport_material} />

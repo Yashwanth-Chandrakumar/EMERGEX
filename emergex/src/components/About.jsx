@@ -1,8 +1,5 @@
-import React, { useEffect, useRef, Suspense } from 'react'
+import React, { useEffect, useRef} from 'react'
 import gsap from 'gsap'
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
-// import Scene from "/Scene"
 import  { ScrollTrigger }   from "gsap/ScrollTrigger"
 import './About.css'
 gsap.registerPlugin(ScrollTrigger)
@@ -43,11 +40,7 @@ export default function About() {
       </h1>
       </div>
       <div className='about-container' ref={des}>
-        {/* <Canvas>
-          <Suspense fallback={null}>
-                  <Scene/>
-          </Suspense>
-        </Canvas> */}
+       
       <h3 className='about-description'>
       EmergeX drives Web3 community growth and education by connecting students with Web3 companies through events, workshops, and hackathons, alongside establishing blockchain clubs in colleges. It's a one-stop platform for students, job seekers, builders, companies, and other stakeholders, fostering a robust Web3 culture.
         </h3>

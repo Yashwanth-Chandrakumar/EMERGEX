@@ -52,3 +52,20 @@ a {
     text-decoration: none;
     color: var(--text-color);
 }
+
+canvas {
+    height: 100vh !important;
+}
+
+@media screen and (max-width:800px) {
+    canvas {
+        height: 50vh !important;
+    }
+
+    .threed {
+        position: absolute;
+        top: 50%;
+        height: 50%;
+        width: 100%;
+    }
+}

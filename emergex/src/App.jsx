@@ -14,36 +14,48 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Objectives from './components/Objectives'
 import Comrade from './components/Comrade'
+import { Suspense,lazy } from 'react'
+import { Canvas } from '@react-three/fiber'
+import { Environment, OrbitControls } from '@react-three/drei'
+const Scene = lazy(() => import('../public/Scene'))
+
 function App() {
-  
+
   return (
     <ReactLenis root>
       <div>
-        {/* <Router>
-          <Routes>
-            <Route path="/" element={<LandingPage />}/>
-            <Route path="/about" element={<About />}/>
-            <Route path="/service" element={<Services />}/>
-          </Routes>
-        </Router> */}
         <Introloader />
         <div>
-        <Navbar />
-
-        <LandingPage />
-        <About />
-        <Traction />
-        <Services/>
-        <Ecosystem />
+          <Navbar />
+          <LandingPage />
+          <div className='threed' style={{
+            position: 'absolute',
+            top: '100%',
+            left: 0,
+            width: '100%',
+            height: '100%'
+          }}>
+            <Canvas>
+              <ambientLight intensity={1.5} />
+              <OrbitControls enableZoom={false} />
+              <Suspense fallback={null}>
+                <Scene/>
+              </Suspense>
+              <Environment preset='sunset' />
+            </Canvas>
+          </div>
+          <About />
+          <Traction />
+          <Services />
+          <Ecosystem />
           <Partner />
           <Objectives />
-          <Comrade/>
-        <Gallery /> 
+          <Comrade />
+          <Gallery />
           <Footer />
-          </div>
-        
+        </div>
       </div>
-      </ReactLenis>
+    </ReactLenis>
   )
 }
 
