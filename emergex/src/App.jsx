@@ -41,7 +41,6 @@ function App() {
         <Gallery /> 
           <Footer />
           </div>
-          {/* <Exit /> */}
         
       </div>
       </ReactLenis>

@@ -63,6 +63,10 @@
     font-size: 1.2rem;
 }
 
+.menu-link ul li:last-child {
+    margin-top: 7px;
+}
+
 .menu-link ul li a {
     text-transform: capitalize;
     color: var(--text-color);

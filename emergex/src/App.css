@@ -32,6 +32,8 @@
 body {
     margin: 0;
     font-family: var(--font1);
+    overflow-x: hidden;
+    scroll-behavior: unset;
     color: var(--text-color);
     background-color: var(--bg-color);
 }

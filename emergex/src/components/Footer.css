@@ -2,7 +2,7 @@
     overflow: hidden;
     height: auto;
     width: 100%;
-    margin-top: 4rem;
+    padding-top: 3rem;
 }
 
 .footer-container {
@@ -126,6 +126,7 @@
     background-color: transparent;
     margin-bottom: -1rem;
     cursor: pointer;
+    color: var(--text-color);
 }
 
 .footer__contact form input:focus {
