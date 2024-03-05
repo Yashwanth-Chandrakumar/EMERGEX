@@ -46,6 +46,9 @@
     font-weight: normal;
 }
 
+.about-description span {
+    color: white;
+}
 
 @media screen and (max-width:1024px) {
     .about-title {

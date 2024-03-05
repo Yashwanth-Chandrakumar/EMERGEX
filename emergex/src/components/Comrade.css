@@ -45,7 +45,7 @@ h2 {
     line-height: 1;
 }
 
-#page p {
+#page #main #section>p {
     font-size: 1.8rem;
     color: #9DA7C4;
     padding-top: 1rem;
@@ -92,6 +92,7 @@ h2 {
     position: relative;
     height: 100%;
     /* Set the height to 100% */
+    font-size: 1.2rem;
     width: 100%;
     /* opacity: 0; */
     /* visibility: hidden; */
@@ -99,10 +100,30 @@ h2 {
     /* transform: scale(1); */
 }
 
+.bento-main article:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bento-main article:nth-of-type(1) p {
+    font-size: 1.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    color: #9DA7C4;
+}
+
 .bento-main article.reveal {
     /* visibility: visible; */
     opacity: 1;
     /* transform: scale(1); */
+}
+
+.decent {
+    height: 60%;
+    width: 75%;
+    padding-top: 2rem;
 }
 
 .bento-main .glowp {

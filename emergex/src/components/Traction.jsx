@@ -93,7 +93,7 @@ export default function Traction() {
         gsap.to("#comNumber", {
           duration: 1,
           delay:1,
-          textContent: "21",
+          textContent: "7",
           roundProps: "textContent",
           ease: "none",
           scrollTrigger: {
@@ -103,7 +103,7 @@ export default function Traction() {
             gsap.to("#eventNumber", {
               duration: 1, 
               delay:1,
-              textContent: "10",
+              textContent: "25",
               roundProps: "textContent",
               ease: "none",
               scrollTrigger: {
@@ -113,7 +113,7 @@ export default function Traction() {
                 gsap.to("#stateNumber", {
                   duration: 1, 
                   delay:1,
-                  textContent: "4",
+                  textContent: "10",
                   roundProps: "textContent",
                   ease: "none",
                   scrollTrigger: {
@@ -123,7 +123,7 @@ export default function Traction() {
                     gsap.to("#studentNumber", {
                       duration: 2,
                       delay:1,
-                      textContent: "1000",
+                      textContent: "5",
                       roundProps: "textContent",
                       ease: "none",
                       scrollTrigger: {
@@ -152,7 +152,7 @@ export default function Traction() {
           <div className="sub-panel ">
             <div className='traction-content'>
             <h3>
-              <span><span id="univNumber">0</span>+ Universities</span> connected together in one community with equal opportunities to learn, connect and grow.
+                  Collaborating with <span><span id="univNumber">0</span>+ Universities</span>, we provide unparalleled learning opportunities and dedicated support for placements, empowering students to thrive in the dynamic world of Web3.
             </h3>
             <h4>
               View stats <NorthEastIcon className="arrow" />
@@ -162,7 +162,7 @@ export default function Traction() {
           <div className="sub-panel">
           <div className='traction-content'>
             <h3>
-              <span ><span id='comNumber'>0</span>+ Comrades</span> working together to make a difference.
+                  Our <span ><span id='comNumber'>0</span>+ EmergeX Hubs</span> serve as innovation hotspots, fostering collaboration and knowledge exchange
             </h3>
             <h4>
               View stats <NorthEastIcon className="arrow" />
@@ -174,8 +174,9 @@ export default function Traction() {
           <div className="sub-panel">
           <div className='traction-content eventTrigger'>
             <h3>
-              <span><span id='eventNumber'>0</span>+ Events</span> conducted to connect students, developers, job seekers to enrich their knowledge and skills.
-            </h3>
+               Conducted to connect students, developers, job seekers to enrich their knowledge and skills.
+              With our community of <span><span id='eventNumber'>0</span>+ EmergeX Comrades</span>, we embark on a journey of mutual support and shared growth, contributing to the thriving ecosystem of Web3.
+                </h3>
             <h4>
               View stats <NorthEastIcon className="arrow" />
               </h4>
@@ -184,7 +185,8 @@ export default function Traction() {
           <div className="sub-panel">
           <div className='traction-content stateTrigger'>
             <h3>
-              <span><span id='stateNumber'>0</span>+ States</span> united together to establish blockchain clubs in universities, fostering web3 culture.
+            Explore our journey of hosting <span><span id='stateNumber'>0</span>+ Interactive workshops and sessions</span>, designed to equip participants with practical skills and insights in the dynamic world of Web3.
+          
             </h3>
             <h4>
               View stats <NorthEastIcon className="arrow" />
@@ -195,8 +197,9 @@ export default function Traction() {
         <div className="panel">
           <div className="sub-panel">
           <div className='traction-content'>
-            <h3>
-              <span><span id='studentNumber'>0</span>+ Students</span> working together to build a effective web3 community.
+                <h3>
+                "Currently making waves across <span><span id='studentNumber'>0</span>+ States</span> in India, EmergeX is on the verge of a global expansion, gearing up to bring our commitment to Web3 excellence to even more regions."
+      
             </h3>
             <h4>
               View stats <NorthEastIcon className="arrow" />

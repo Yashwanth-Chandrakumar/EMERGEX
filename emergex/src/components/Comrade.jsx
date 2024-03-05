@@ -3,6 +3,7 @@ import React,{useRef} from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
+import decent from '../assets/img/1904.i502.005..Datacenter_isometric_composition-removebg-preview.png'
 gsap.registerPlugin(ScrollTrigger)
 export default function Comrade() {
 
@@ -183,7 +184,10 @@ const main = () => {
 			  </div></section>
 			  <section id='section' className='bento'>
 				  <main className='bento-main'>
-					  <article ref={cardRefs[0]} onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={() => handleMouseLeave(0)}><div className="glowp" /></article>
+					  <article ref={cardRefs[0]} onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={() => handleMouseLeave(0)}>
+						  <img className='decent' src={decent}/>
+						  <p>Network with industry leaders in the web3 community</p>
+						  <div className="glowp"></div></article>
 						<article ref={cardRefs[1]} onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave(1)}><div className="glowp" /></article>
 						<article ref={cardRefs[2]} onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={() => handleMouseLeave(2)}><div className="glowp" /></article>
 						<article ref={cardRefs[3]} onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={() => handleMouseLeave(3)}><div className="glowp" /></article>

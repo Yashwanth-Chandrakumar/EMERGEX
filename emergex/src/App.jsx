@@ -17,6 +17,7 @@ import Comrade from './components/Comrade'
 import { Suspense,lazy } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Environment, OrbitControls } from '@react-three/drei'
+// import Aboutd from '../public/Aboutd'
 const Scene = lazy(() => import('../public/Scene'))
 
 function App() {
@@ -36,12 +37,12 @@ function App() {
             height: '100%'
           }}>
             <Canvas>
-              <ambientLight intensity={1.5} />
-              <OrbitControls enableZoom={false} />
+              <ambientLight intensity={2} />
+              <OrbitControls enableZoom={false}  />
               <Suspense fallback={null}>
-                <Scene/>
+                {/* <Scene/> */}
               </Suspense>
-              <Environment preset='sunset' />
+              <Environment preset='lobby' />
             </Canvas>
           </div>
           <About />

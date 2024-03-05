@@ -42,7 +42,12 @@ export default function About() {
       <div className='about-container' ref={des}>
        
       <h3 className='about-description'>
-      EmergeX drives Web3 community growth and education by connecting students with Web3 companies through events, workshops, and hackathons, alongside establishing blockchain clubs in colleges. It's a one-stop platform for students, job seekers, builders, companies, and other stakeholders, fostering a robust Web3 culture.
+      <span>EmergeX</span> is a dynamic platform passionately committed to driving <span>Web3 growth and education</span>. With a focus on connecting students, job seekers, builders, and companies, we create a vibrant ecosystem that fosters a robust Web3 culture. Through <span>curated events, workshops, and hackathons,</span> we empower the next generation of innovators and leaders.
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EmergeX is not just a platform; it's a <span>catalyst</span> for shaping the future of the decentralized web.
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to <span>EmergeX</span> – Your One Stop Solution for all Emerging Technologies!
+
         </h3>
         </div>
     </div>

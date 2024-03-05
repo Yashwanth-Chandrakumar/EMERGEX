@@ -87,14 +87,15 @@ export default function Objectives() {
                     <div key={index} className="letter">{letter}</div>
                 ))}
       </h1>
-      <p><span>EmergeX Hub</span>, an extension of EmergeX, offers students the chance to become <span>EmergeX Comrades</span>, promoting Web3 awareness through events and workshops, and fostering tech communities in educational institutions.</p>
+      <p><span>EmergeX Hub</span>, an extension of EmergeX, gives students the chance to explore Web3 and emerging technologies. As an <span>EmergeX Comrade</span>, you'll actively promote Web3 awareness through events and workshops, fostering tech communities within educational institutions at EmergeX Hub.</p>
 
       <div className='obj-wrapper'>
         <div className='obj-card' ref={cardRefs[0]} onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={() => handleMouseLeave(0)}>
           <img src={ learn} />
           <div className='obj-content'>
             <h3>Culture of Learning</h3>
-            <p>Create a culture of growth and learning with creative ideas and boost the same by organising hackathons and other events also branding EmergeX</p>
+            <p>Dive into a culture of continuous learning at EmergeX, where students acquire the skills needed for the dynamic Web3 space.
+</p>
             <div className="glow" />
           </div>
         </div>
@@ -102,7 +103,7 @@ export default function Objectives() {
           <img src={ connect} />
           <div className='obj-content'>
             <h3>Connect with Industry</h3>
-            <p>Access to community management training, mentorship and technical knowledge from industry experts while fostering valuable connections.</p>
+            <p>Get access to training, mentorship and technical knowledge from industry experts while fostering valuable connections.</p>
             <div className="glow" />
           </div>
         </div>
