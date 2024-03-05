@@ -40,7 +40,7 @@ function App() {
               <ambientLight intensity={2} />
               <OrbitControls enableZoom={false}  />
               <Suspense fallback={null}>
-                {/* <Scene/> */}
+                <Scene/>
               </Suspense>
               <Environment preset='lobby' />
             </Canvas>

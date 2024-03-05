@@ -190,18 +190,26 @@ const main = () => {
 						  <img className='decent' src={decent}/>
 						  <p>Network with industry leaders in the web3 community</p>
 						  <div className="glowp"></div></article>
-						<article ref={cardRefs[1]} onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave(1)}><div className="glowp" /></article>
-						<article ref={cardRefs[2]} onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={() => handleMouseLeave(2)}><div className="glowp" /></article>
-						<article ref={cardRefs[3]} onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={() => handleMouseLeave(3)}><div className="glowp" /></article>
-					  <article ref={cardRefs[4]} onMouseEnter={() => handleMouseEnter(4)} onMouseLeave={() => handleMouseLeave(4)}><div className="glowp" />
-						  <div className='lastdiv'>
-							  <img src={lastimg}/>
-							  <p>It's never too late. Embark on Web3 Odessey.</p>
-							  <div className='registerbtn'>
-							  <p className='lastp'><a href='https://docs.google.com/forms/d/e/1FAIpQLSeo8Gc0Dp0ebWLncS2YRV6KcnZu1_qrFYzBAKMQFsNKi4GJFQ/viewform'>Register Here <NorthEastIcon className='ricon'/></a></p>
-							  </div>
-							  </div>
+					  <article ref={cardRefs[1]} onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave(1)}><div className="glowp" />
+						  <p>Stay Updated on Web3 Trends.</p>
 					  </article>
+					  <article ref={cardRefs[2]} onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={() => handleMouseLeave(2)}><div className="glowp" />
+					  <p>Explore Industrial Opportunities with us.</p></article>
+					  <article ref={cardRefs[3]} onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={() => handleMouseLeave(3)}><div className="glowp" />
+					  <p>Become an early mover in Blockchain.</p></article>
+						<article ref={cardRefs[4]} onMouseEnter={() => handleMouseEnter(4)} onMouseLeave={() => handleMouseLeave(4)} onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeo8Gc0Dp0ebWLncS2YRV6KcnZu1_qrFYzBAKMQFsNKi4GJFQ/viewform', '_blank')}>
+	<div className="glowp" />
+	<div className='lastdiv'>
+		<img src={lastimg}/>
+		<p>It's never too late. Embark on Web3 Odessey.</p>
+		<div className='registerbtn'>
+			<a href='https://docs.google.com/forms/d/e/1FAIpQLSeo8Gc0Dp0ebWLncS2YRV6KcnZu1_qrFYzBAKMQFsNKi4GJFQ/viewform' target="_blank" rel="noopener noreferrer">
+				<p className='lastp'>Register Here <NorthEastIcon className='ricon'/></p>
+			</a>
+		</div>
+	</div>
+</article>
+
 				  </main>
 			  </section>
 		{/* <section id='section' className="gradient"><h2>3</h2></section> */}
