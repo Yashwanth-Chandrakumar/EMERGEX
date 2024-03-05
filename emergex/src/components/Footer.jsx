@@ -36,7 +36,7 @@ const Footer = () => {
     }, []);
 
   return (
-    <div className='foot'>
+    <div className='foot' id='contact'>
         <section className="conclusion"></section>
         
         <footer className='footer'>

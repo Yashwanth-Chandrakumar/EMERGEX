@@ -62,7 +62,7 @@ export default function LandingPage() {
     }, []);
 
     return (
-        <div className='mainpage'>
+        <div className='mainpage' id='home'>
             <div className='landing'>
 
                 <h1 ref={titleRef} className='land-title'>

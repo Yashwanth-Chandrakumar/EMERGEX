@@ -81,7 +81,7 @@ export default function Objectives() {
     })
   },{scope:objContainer})
   return (
-    <div className='objectives-container' ref={objContainer}>
+    <div id='hub' className='objectives-container' ref={objContainer}>
       <h1 ref={objRef}>
       {Array.from("OBJECTIVES").map((letter, index) => (
                     <div key={index} className="letter">{letter}</div>

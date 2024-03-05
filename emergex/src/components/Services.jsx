@@ -35,7 +35,7 @@ export default function Services() {
     });
     }, {scope:serviceCont });
   return (
-    <div className="services" ref={serviceCont}>
+    <div className="services" id='services' ref={serviceCont}>
       <h1 className='services-title' ref={serviceRef}>
       {Array.from("WHAT WE DO").map((letter, index) => (
                     <div key={index} className="letter" style={{whiteSpace:"pre"}}>{letter}</div>

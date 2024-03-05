@@ -84,7 +84,7 @@ const Ecosystem = () => {
     }, { scope: ecoContainer })
 
   return (
-    <div className='ecosystem' ref={ecoContainer}>
+    <div className='ecosystem' id='ecosystem' ref={ecoContainer}>
       <span className='eco-title col-md-12 m-0 ps-5 py-5'>
         <h1 ref={titleref}>{Array.from("ECOSYSTEM").map((letter, index) => (
           <div key={index} className="letter">{letter}</div>
