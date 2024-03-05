@@ -4,6 +4,8 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import decent from '../assets/img/1904.i502.005..Datacenter_isometric_composition-removebg-preview.png'
+import lastimg from "../assets/img/1162788168077-removebg-preview.png"
+import NorthEastIcon from '@mui/icons-material/NorthEast';
 gsap.registerPlugin(ScrollTrigger)
 export default function Comrade() {
 
@@ -191,7 +193,15 @@ const main = () => {
 						<article ref={cardRefs[1]} onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave(1)}><div className="glowp" /></article>
 						<article ref={cardRefs[2]} onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={() => handleMouseLeave(2)}><div className="glowp" /></article>
 						<article ref={cardRefs[3]} onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={() => handleMouseLeave(3)}><div className="glowp" /></article>
-				  		<article ref={cardRefs[4]} onMouseEnter={() => handleMouseEnter(4)} onMouseLeave={() => handleMouseLeave(4)}><div className="glowp" /></article>
+					  <article ref={cardRefs[4]} onMouseEnter={() => handleMouseEnter(4)} onMouseLeave={() => handleMouseLeave(4)}><div className="glowp" />
+						  <div className='lastdiv'>
+							  <img src={lastimg}/>
+							  <p>It's never too late. Embark on Web3 Odessey.</p>
+							  <div className='registerbtn'>
+							  <p className='lastp'><a href='https://docs.google.com/forms/d/e/1FAIpQLSeo8Gc0Dp0ebWLncS2YRV6KcnZu1_qrFYzBAKMQFsNKi4GJFQ/viewform'>Register Here <NorthEastIcon className='ricon'/></a></p>
+							  </div>
+							  </div>
+					  </article>
 				  </main>
 			  </section>
 		{/* <section id='section' className="gradient"><h2>3</h2></section> */}

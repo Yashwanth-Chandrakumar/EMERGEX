@@ -45,7 +45,7 @@ h2 {
     line-height: 1;
 }
 
-#page #main #section>p {
+#page #main #section .gradient>p {
     font-size: 1.8rem;
     color: #9DA7C4;
     padding-top: 1rem;
@@ -106,6 +106,7 @@ h2 {
     flex-direction: column;
 }
 
+
 .bento-main article:nth-of-type(1) p {
     font-size: 1.3rem;
     padding-left: 2rem;
@@ -113,6 +114,42 @@ h2 {
     text-align: center;
     color: #9DA7C4;
 }
+
+.lastdiv {
+    font-size: 1.3rem;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.lastdiv img {
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    z-index: -1;
+}
+
+.lastp {
+    margin-top: 0;
+}
+
+.lastp:hover {
+    text-decoration: underline;
+}
+
+.ricon {
+    margin-bottom: -5px;
+}
+
+.registerbtn p>a {
+    color: #9DA7C4;
+}
+
 
 .bento-main article.reveal {
     /* visibility: visible; */
