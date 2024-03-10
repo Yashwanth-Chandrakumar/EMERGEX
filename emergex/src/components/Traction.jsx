@@ -175,7 +175,7 @@ export default function Traction() {
           <div className='traction-content eventTrigger'>
             <h3>
                Conducted to connect students, developers, job seekers to enrich their knowledge and skills.
-              With our community of <span><span id='eventNumber'>0</span>+ EmergeX Comrades</span>, we embark on a journey of mutual support and shared growth, contributing to the thriving ecosystem of Web3.
+              With our community of <span><span id='eventNumber'>0</span>+ EmergeX Comrades</span>, contributing to the thriving ecosystem of Web3.
                 </h3>
             <h4>
               View stats <NorthEastIcon className="arrow" />

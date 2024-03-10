@@ -8,7 +8,7 @@ import SendIcon from '@mui/icons-material/Send';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import './Footer.css';
 import LanguageIcon from '@mui/icons-material/Language';
-import footimg from "../assets/img/3974104.png"
+import footimg from "../assets/img/3974104.webp"
 import { Link } from '@mui/material';
 
 const Footer = () => {

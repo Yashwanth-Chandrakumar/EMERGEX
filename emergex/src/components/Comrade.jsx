@@ -3,8 +3,8 @@ import React,{useRef} from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
-import decent from '../assets/img/1904.i502.005..Datacenter_isometric_composition-removebg-preview.png'
-import lastimg from "../assets/img/1162788168077-removebg-preview.png"
+import decent from '../assets/img/1904.i502.005..Datacenter_isometric_composition-removebg-preview.webp'
+import lastimg from "../assets/img/1162788168077-removebg-preview.webp"
 import NorthEastIcon from '@mui/icons-material/NorthEast';
 gsap.registerPlugin(ScrollTrigger)
 export default function Comrade() {

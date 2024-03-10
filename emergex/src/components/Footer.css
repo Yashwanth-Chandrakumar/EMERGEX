@@ -168,7 +168,7 @@
 
     .footer-container {
         flex-direction: column;
-        height: auto;
+        height: 100vh;
         gap: 3rem;
     }
 

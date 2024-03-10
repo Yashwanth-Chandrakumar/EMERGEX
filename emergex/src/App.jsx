@@ -29,13 +29,7 @@ function App() {
         <div>
           <Navbar />
           <LandingPage />
-          <div className='threed' style={{
-            position: 'absolute',
-            top: '100%',
-            left: 0,
-            width: '100%',
-            height: '100%'
-          }}>
+          <div className='threed'>
             <Canvas>
               <ambientLight intensity={2} />
               <OrbitControls enableZoom={false}  />

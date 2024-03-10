@@ -57,6 +57,7 @@
     background: linear-gradient(333deg, rgba(111, 228, 125, 1) 15%, rgba(82, 112, 255, 1) 100%);
     border-radius: 10px;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .service:nth-child(1) {

@@ -3,8 +3,8 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import './Partner.css';
-import pushImg from '../assets/img/push.png';
-import shardeumImg from '../assets/img/shardeum.png';
+import pushImg from '../assets/img/push.webp';
+import shardeumImg from '../assets/img/shardeum.webp';
 import buildbearImg from '../assets/img/buildbear.svg';
 
 gsap.registerPlugin(ScrollTrigger);
