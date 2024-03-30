@@ -14,6 +14,7 @@ import Objectives from './components/Objectives';
 import Partner from './components/Partner';
 import Services from './components/Services';
 import Traction from './components/Traction';
+import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
 // import Aboutd from '../public/Aboutd';
 const Scene = lazy(() => import('../public/Scene'));
 
