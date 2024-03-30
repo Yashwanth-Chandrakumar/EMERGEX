@@ -65,8 +65,8 @@
 @media screen and (max-width:800px) {
     .about {
         flex-direction: column;
-        gap: 25vh;
-        height: 80vh;
+        /* gap: 25vh; */
+        height: 40vh;
         width: 100%;
     }
 
