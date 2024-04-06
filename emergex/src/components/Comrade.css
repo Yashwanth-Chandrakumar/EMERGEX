@@ -231,21 +231,25 @@ h2 {
         font-size: 2.5rem;
         padding-left: 2rem;
     }
-
+    .gradient{
+        height:0;
+    }
+    #page #main{
+        height: 180vh;
+    }
+    #page #section:nth-of-type(1){
+        height: 300vh;
+    }
     #page #main #section .gradient>p {
         font-size: 1.1rem;
         /* padding-left: 1rem; */
         text-indent: 2rem;
     }
-
     #page #section:not(:first-child) {
-        top: 60%;
+        top: 27%;
     }
 
 
-    #page #section:nth-of-type(2) {
-        height: auto;
-    }
 
     .bento {
         flex-direction: column;
