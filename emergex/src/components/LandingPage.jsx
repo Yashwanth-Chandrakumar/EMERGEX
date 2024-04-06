@@ -3,10 +3,11 @@ import gsap from "gsap";
 import './LandingPage.css';
 import Navbar from './Navbar';
 import { isMobile } from 'react-device-detect';
-
+import { useGSAP } from '@gsap/react';
 export default function LandingPage() {
     const titleRef = useRef(null);
-    useEffect(() => {
+    const homeContainer = useRef(null)
+    useGSAP(() => {
         const titleElement = titleRef.current;
 
         gsap.to(titleElement.children, {
@@ -59,10 +60,10 @@ export default function LandingPage() {
             });
 
         }
-    }, []);
+    },{scope: homeContainer});
 
     return (
-        <div className='mainpage' id='home'>
+        <div className='mainpage' id='home' ref={homeContainer}>
             <div className='landing'>
 
                 <h1 ref={titleRef} className='land-title'>

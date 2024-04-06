@@ -20,9 +20,7 @@ const Scene = lazy(() => import('../public/Scene'));
 
 function App() {
   // Function to check if the device is mobile
-  const isMobile = () => {
-    return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-  };
+  const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   return (
     <ReactLenis root>
@@ -32,7 +30,7 @@ function App() {
           <Navbar />
           <LandingPage />
           {/* Conditionally render the 3D scene based on device */}
-          {!isMobile() && (
+          {!isMobileDevice && (
             <div className='threed'>
               <Canvas>
                 <ambientLight intensity={2} />
@@ -50,7 +48,7 @@ function App() {
           <Ecosystem />
           <Partner />
           <Objectives />
-          <Comrade />
+          <Comrade/>
           <Gallery />
           <Footer />
         </div>

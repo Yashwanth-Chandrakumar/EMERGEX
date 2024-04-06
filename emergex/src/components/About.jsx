@@ -3,11 +3,13 @@ import gsap from 'gsap'
 import  { ScrollTrigger }   from "gsap/ScrollTrigger"
 import './About.css'
 gsap.registerPlugin(ScrollTrigger)
-
+import { isMobile } from 'react-device-detect'
+import { useGSAP } from '@gsap/react'
 export default function About() {
   const aboutRef = useRef(null);
   const des = useRef(null);
-  useEffect(() => {
+  const abtContainer = useRef(null)
+  useGSAP(() => {
     const about = aboutRef.current
     gsap.to(about.children, {
         y: 0,
@@ -29,9 +31,9 @@ export default function About() {
         trigger:desc
       }
   });
-}, []);
+}, {scope:abtContainer});
   return (
-    <div className='about' id='about' >
+    <div className='about' id='about' ref={abtContainer}>
       <div className='about-title-container'>
       <h1 ref={aboutRef} className='about-title'>
                 {Array.from("About").map((letter, index) => (

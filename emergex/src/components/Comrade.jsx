@@ -6,6 +6,7 @@ import { useGSAP } from '@gsap/react'
 import decent from '../assets/img/1904.i502.005..Datacenter_isometric_composition-removebg-preview.webp'
 import lastimg from "../assets/img/1162788168077-removebg-preview.webp"
 import NorthEastIcon from '@mui/icons-material/NorthEast';
+import {isMobile } from 'react-device-detect'
 gsap.registerPlugin(ScrollTrigger)
 export default function Comrade() {
 
@@ -51,9 +52,9 @@ export default function Comrade() {
     cardRefs[index].current.style.transform = '';
     cardRefs[index].current.style.background = '';
   }
-
+  const comradeRef = useRef(null)
+if(!isMobile){
     gsap.registerPlugin(ScrollTrigger)
-    const comradeRef = useRef(null)
 useGSAP(()=>{
 const Scroll = new function() {
 	let sections
@@ -177,6 +178,7 @@ const main = () => {
 	});
   };
   document.addEventListener("DOMContentLoaded", main);
+}
   
   return (
 	  <div id="page" ref={comradeRef}>
@@ -212,7 +214,7 @@ const main = () => {
 
 				  </main>
 			  </section>
-		{/* <section id='section' className="gradient"><h2>3</h2></section> */}
+		
 	</main>
     </div>
   )
