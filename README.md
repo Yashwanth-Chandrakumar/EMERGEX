@@ -17,7 +17,8 @@ Day 12 : Feb 14 : Contact page and styling in process <br>
 Day 13 : Feb 15 : Footer added along with contact part <br>
 Day 14 : Feb 16 : Added responsive behaviour to comonents <br>
 Day 15 : Feb 17 : useGSAP hook implemented for component animations <br>
-Day 16 : Feb 18 : Added responsive behaviour to GSAP Animations.
+Day 16 : Feb 18 : Added responsive behaviour to GSAP Animations.<br>
+
 Minor bugs solved
 to-do : <br> 
 =
