@@ -1,6 +1,6 @@
 # EMERGEX
 Crafting a landing website for the emergex club
-https://emergex.netlify.app/
+https://emergexx.netlify.app/
 
 Day 1 : Feb 3 : Work Started <br>
 Day 2 : Feb 4 : Figma Design Started <br>
@@ -19,13 +19,7 @@ Day 14 : Feb 16 : Added responsive behaviour to comonents <br>
 Day 15 : Feb 17 : useGSAP hook implemented for component animations <br>
 Day 16 : Feb 18 : Added responsive behaviour to GSAP Animations.<br>
 
-Minor bugs solved
-to-do : <br> 
-=
- => Update traction content<br>
- => partner link, dark color logos <br>
 
-Correction : <br>
 https://docs.google.com/document/d/1y52NUKOdO52sQ8im03NqDI-YK7x7opmsptU2NMaq_uc/edit
 
 
